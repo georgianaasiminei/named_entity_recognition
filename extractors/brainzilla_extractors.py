@@ -1,3 +1,4 @@
+import re
 from collections import Counter
 from typing import List
 
@@ -7,12 +8,13 @@ from bs4 import BeautifulSoup
 from spacy import displacy
 
 from repository.database import create_database
-from repository.models import Puzzle
+from repository.models import Puzzle, Source
 
 nlp = en_core_web_sm.load()
 
 DOMAIN = "https://www.brainzilla.com"
 ZEBRA_PUZZLES_PATH = "/logic/zebra/"
+SOURCE_ID = 1
 
 
 def extract_pages() -> List[str]:
@@ -26,13 +28,34 @@ def extract_pages() -> List[str]:
     return pages
 
 
-def extract_puzzle(puzzle_url: str) -> str:
+def extract_puzzle(puzzle_url: str) -> Puzzle:
     html_doc = requests.get(puzzle_url)
     soup = BeautifulSoup(html_doc.text, 'html.parser')
-    title = ""
-    text = ""
+    title_selector = soup.find('div', class_="page-header").find('h1').text
+    title = re.search("(.*)\sZebra", title_selector).group(1)
+    description = soup.find('div', class_="page-header").find('div', class_='description').text
     clues = soup.find('div', class_="clues").text
-    return Puzzle(title=title, text=text, clues=clues, url=puzzle_url)
+    return Puzzle(
+        title=title.strip(),
+        description=description.strip(),
+        clues=clues.strip(),
+        url=puzzle_url,
+        source_id=SOURCE_ID
+    )
+
+
+def populate_db(puzzles: List[Puzzle]):
+    # Add Source
+    brainzilla_source = Source.create(
+        name="Brainzilla",
+        domain="https://www.brainzilla.com",
+        puzzles_path="/logic/zebra/"
+    )
+    brainzilla_source.save()
+
+    # Add puzzles
+    for puzzle in puzzles:
+        puzzle.save()
 
 
 def main():
@@ -47,12 +70,17 @@ def main():
     print(pages_urls)
 
     # Extract all puzzles
-    # for path in pages_urls:
-    #     full_path = f"{DOMAIN}{path}"
-    #     print(extract_puzzle(full_path))
+    puzzles = []
+    for path in pages_urls:
+        full_path = f"{DOMAIN}{path}"
+        extracted_puzzle = extract_puzzle(full_path)
+        puzzles.append(extracted_puzzle)
+        # print(extracted_puzzle.title, extracted_puzzle.url, extracted_puzzle.description, extracted_puzzle.clues)
+        print(extracted_puzzle.title)
 
     # Initiate DB
     create_database()
+    # populate_db(puzzles)
 
     # # Apply NLP
     # processed_puzzle = nlp(puzzle_text)

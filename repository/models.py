@@ -17,7 +17,7 @@ class Source(BaseModel):
 
 class Puzzle(BaseModel):
     title = CharField()
-    text = TextField()
+    description = TextField()
     clues = TextField()
     url = CharField()
     source = ForeignKeyField(Source)
