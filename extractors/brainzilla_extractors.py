@@ -6,6 +6,9 @@ import requests
 from bs4 import BeautifulSoup
 from spacy import displacy
 
+from repository.database import create_database
+from repository.models import Puzzle
+
 nlp = en_core_web_sm.load()
 
 DOMAIN = "https://www.brainzilla.com"
@@ -26,12 +29,14 @@ def extract_pages() -> List[str]:
 def extract_puzzle(puzzle_url: str) -> str:
     html_doc = requests.get(puzzle_url)
     soup = BeautifulSoup(html_doc.text, 'html.parser')
-    puzzle_clues = soup.find('div', class_="clues").text
-    return puzzle_clues
+    title = ""
+    text = ""
+    clues = soup.find('div', class_="clues").text
+    return Puzzle(title=title, text=text, clues=clues, url=puzzle_url)
 
 
 def main():
-    # Extract the puzzle's text
+    # Extract the puzzle
     puzzle_url = "https://www.brainzilla.com/logic/zebra/blood-donation/"
     print("#################################################")
     puzzle_text = extract_puzzle(puzzle_url)
@@ -40,9 +45,15 @@ def main():
 
     pages_urls = extract_pages()
     print(pages_urls)
-    for path in pages_urls:
-        full_path = f"{DOMAIN}{path}"
-        print(extract_puzzle(full_path))
+
+    # Extract all puzzles
+    # for path in pages_urls:
+    #     full_path = f"{DOMAIN}{path}"
+    #     print(extract_puzzle(full_path))
+
+    # Initiate DB
+    create_database()
+
     # # Apply NLP
     # processed_puzzle = nlp(puzzle_text)
     # displacy.render(processed_puzzle, jupyter=True, style='ent')
