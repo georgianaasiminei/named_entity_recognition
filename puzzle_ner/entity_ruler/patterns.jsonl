@@ -1,0 +1,33 @@
+{"label":"NORP","pattern":"Brit"}
+{"label":"NORP","pattern":"Swede"}
+{"label":"NORP","pattern":"Dane"}
+{"label":"NORP","pattern":"Norwegian"}
+{"label":"NORP","pattern":"German"}
+{"label":"NORP","pattern":"Chinese"}
+{"label":"COLOR","pattern":"Red"}
+{"label":"COLOR","pattern":"Black"}
+{"label":"COLOR","pattern":"Blue"}
+{"label":"COLOR","pattern":"Green"}
+{"label":"COLOR","pattern":"Purple"}
+{"label":"COLOR","pattern":"Pink"}
+{"label":"COLOR","pattern":"Orange"}
+{"label":"COLOR","pattern":"Yellow"}
+{"label":"COLOR","pattern":"White"}
+{"label":"PRODUCT","pattern":"Tea"}
+{"label":"PRODUCT","pattern":"Coffee"}
+{"label":"PRODUCT","pattern":"Milk"}
+{"label":"PRODUCT","pattern":"Beer"}
+{"label":"PRODUCT","pattern":"Water"}
+{"label":"WORK_OF_ART","pattern":"Pall Mall"}
+{"label":"WORK_OF_ART","pattern":"Dunhill"}
+{"label":"WORK_OF_ART","pattern":"Blends"}
+{"label":"WORK_OF_ART","pattern":"Blue Master"}
+{"label":"WORK_OF_ART","pattern":"Prince"}
+{"label":"ANIMAL","pattern":"Dog"}
+{"label":"ANIMAL","pattern":"Dogs"}
+{"label":"ANIMAL","pattern":"Bird"}
+{"label":"ANIMAL","pattern":"Birds"}
+{"label":"ANIMAL","pattern":"Cat"}
+{"label":"ANIMAL","pattern":"Cats"}
+{"label":"ANIMAL","pattern":"Horse"}
+{"label":"ANIMAL","pattern":"Horses"}

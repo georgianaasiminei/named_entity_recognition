@@ -6,9 +6,12 @@ import en_core_web_sm
 import requests
 from bs4 import BeautifulSoup
 from spacy import displacy
+from spacy.tokens.doc import Doc
+from spacy.tokens.span import Span
 
 from repository.database import create_database
 from repository.models import Puzzle, Source
+from repository.puzzle_repository import get_puzzle
 
 nlp = en_core_web_sm.load()
 
@@ -44,6 +47,22 @@ def extract_puzzle(puzzle_url: str) -> Puzzle:
     )
 
 
+def extract_all_puzzles() -> List[Puzzle]:
+    """Returns a list of all the puzzles found on the Brainzilla source"""
+    pages_urls = extract_pages()
+    print(pages_urls)
+
+    # Extract all puzzles
+    puzzles = []
+    for path in pages_urls:
+        full_path = f"{DOMAIN}{path}"
+        extracted_puzzle = extract_puzzle(full_path)
+        puzzles.append(extracted_puzzle)
+        # print(extracted_puzzle.title, extracted_puzzle.url, extracted_puzzle.description, extracted_puzzle.clues)
+        print(extracted_puzzle.title)
+    return puzzles
+
+
 def populate_db(puzzles: List[Puzzle]):
     # Add Source
     brainzilla_source = Source.create(
@@ -60,40 +79,49 @@ def populate_db(puzzles: List[Puzzle]):
 
 def main():
     # Extract the puzzle
-    puzzle_url = "https://www.brainzilla.com/logic/zebra/blood-donation/"
-    print("#################################################")
-    puzzle_text = extract_puzzle(puzzle_url)
-    print(puzzle_text)
-    print("#################################################")
+    # puzzle_url = "https://www.brainzilla.com/logic/zebra/blood-donation/"
+    # print("#################################################")
+    # puzzle_text = extract_puzzle(puzzle_url)
+    # print(puzzle_text)
+    # print("#################################################")
 
-    pages_urls = extract_pages()
-    print(pages_urls)
-
-    # Extract all puzzles
-    puzzles = []
-    for path in pages_urls:
-        full_path = f"{DOMAIN}{path}"
-        extracted_puzzle = extract_puzzle(full_path)
-        puzzles.append(extracted_puzzle)
-        # print(extracted_puzzle.title, extracted_puzzle.url, extracted_puzzle.description, extracted_puzzle.clues)
-        print(extracted_puzzle.title)
+    # Extract all the puzzles from Brainzilla
+    # puzzles = extract_all_puzzles()
 
     # Initiate DB
     create_database()
     # populate_db(puzzles)
 
-    # # Apply NLP
+    # Apply NLP
     # processed_puzzle = nlp(puzzle_text)
     # displacy.render(processed_puzzle, jupyter=True, style='ent')
-    #
-    # # Extract NER
-    # print("Labels of found entities:")
-    # labels = [x.label_ for x in processed_puzzle.ents]
-    # print(Counter(labels))
-    #
-    # print("Found entities by their types:")
-    # entities = [(x.text, x.label_) for x in processed_puzzle.ents]
-    # print(Counter(entities))
+    puzzle_clues = get_puzzle(20)
+    processed_puzzle = nlp(puzzle_clues)
+    print(puzzle_clues)
+    # print("#################################################")
+    # print(displacy.render(processed_puzzle, jupyter=False, style='ent'))
+    # print("#################################################")
+
+    # Extract NER
+    print("\nLabels of found entities:")
+    labels = [x.label_ for x in processed_puzzle.ents]
+    print(Counter(labels))
+
+    print("Found entities by their types:")
+    entities = [(x.text, x.label_) for x in processed_puzzle.ents]
+    print(Counter(entities))
+
+    for token in processed_puzzle.ents:
+        print((token.orth_, token.label_, token.lemma_))
+
+    print("############################################")
+    print([(e.text, e.start, e.end, e.label_) for e in processed_puzzle.ents])
+    brit_ent = Span(processed_puzzle, 1, 2, label="NORP")
+    dane_ent = Span(processed_puzzle, 18, 19, label="NORP")
+    processed_puzzle.set_ents([dane_ent, brit_ent], default="unmodified")
+    print([(e.text, e.start, e.end, e.label_) for e in processed_puzzle.ents])
+    displacy.serve(processed_puzzle, style="ent")
+    print("############################################")
 
 
 if __name__ == '__main__':
