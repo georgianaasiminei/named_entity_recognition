@@ -53,11 +53,11 @@ def generate_rules():
     # add a pipe with rules based NER
     ruler = nlp.add_pipe("entity_ruler")
 
-    norp_patterns = _build_patterns_list("data/nationalities.json", "NORP")
-    ruler.add_patterns(norp_patterns)
+    persons_patterns = _build_patterns_list("data/persons.json", "PERSON")
+    ruler.add_patterns(persons_patterns)
 
-    colors_patterns = _build_patterns_list("data/colors.json", "COLOR")
-    ruler.add_patterns(colors_patterns)
+    fruits_patterns = _build_patterns_list("data/fruits.json", "FRUIT")
+    ruler.add_patterns(fruits_patterns)
 
     products_patterns = _build_patterns_list("data/products.json", "PRODUCT")
     ruler.add_patterns(products_patterns)
@@ -67,6 +67,21 @@ def generate_rules():
 
     animals_patterns = _build_patterns_list("data/animals.json", "ANIMAL")
     ruler.add_patterns(animals_patterns)
+
+    colors_patterns = _build_patterns_list("data/colors.json", "COLOR")
+    ruler.add_patterns(colors_patterns)
+
+    activities_patterns = _build_patterns_list("data/activities.json", "ACTIVITY")
+    ruler.add_patterns(activities_patterns)
+
+    gpes_patterns = _build_patterns_list("data/gpes.json", "GPE")
+    ruler.add_patterns(gpes_patterns)
+
+    orgs_patterns = _build_patterns_list("data/orgs.json", "ORG")
+    ruler.add_patterns(orgs_patterns)
+
+    norp_patterns = _build_patterns_list("data/nationalities.json", "NORP")
+    ruler.add_patterns(norp_patterns)
 
     # save the model
     nlp.to_disk("puzzle_ner")
@@ -101,17 +116,21 @@ def main():
     nlp.add_pipe("entity_ruler", source=custom_nlp, before="ner")
 
     generate_rules()
-    text = get_puzzle(20)  # einstein
+    text = get_puzzle(8)  # einstein
     doc = nlp(text)
 
     # pick custom colors for each entity
     colors = {"ANIMAL": "#778f8c",
+              "ACTIVITY": "#f54242",
               "NORP": "#966c88",
+              "FRUIT": "linear-gradient(90deg, #ecf542, #4287f5)",
               "COLOR": "linear-gradient(90deg, #aa9cfc, #fc9ce7)"}
-    options = {"ents": ["ANIMAL", "CARDINAL", "COLOR", "DATE", "EVENT", "FAC", "GPE", "LANGUAGE", "LAW", "LOC", "MONEY",
-                        "NORP", "ORDINAL", "ORG", "PERCENT", "PERSON", "PRODUCT", "QUANTITY", "TIME", "WORK_OF_ART"],
-               "colors": colors}
-    displacy.serve(doc, style="ent", port=5002, options=options)
+    options = {
+        "ents": ["ACTIVITY", "ANIMAL", "CARDINAL", "COLOR", "DATE", "EVENT", "FAC", "FRUIT", "GPE", "LANGUAGE", "LAW",
+                 "LOC", "MONEY", "NORP", "ORDINAL", "ORG", "PERCENT", "PERSON", "PRODUCT", "QUANTITY", "TIME",
+                 "WORK_OF_ART"],
+        "colors": colors}
+    displacy.serve(doc, style="ent", port=5001, options=options)
 
 
 if __name__ == '__main__':
