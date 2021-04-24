@@ -1,3 +1,5 @@
+from typing import List, Tuple
+
 import spacy
 from spacy.lang.en import English
 from spacy import displacy
@@ -10,6 +12,11 @@ def load_data(file):
     with open(file, "r", encoding="utf-8") as f:
         data = json.load(f)
     return data
+
+
+def save_data(file, data):
+    with open(file, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=4)
 
 
 # def test_rules_on_puzzle():
@@ -96,8 +103,9 @@ def generate_rules():
     nlp.to_disk("puzzle_ner")
 
 
-def create_training_set(text):
-    """will return a data structure as in TRAIN_DATA list"""
+def create_training_set_for_a_puzzle(text: str) -> List[Tuple]:
+    """will return a data structure as in TRAIN_DATA list
+    Applies NER on a text (clues of a puzzle) and returns the text and all the found entities and their positions"""
     # TRAIN_DATA = [(text, {"entities": [(start, end, label)]})]
 
     # Create an enhanced nlp pipe from the original one by adding the custom rules
@@ -113,8 +121,7 @@ def create_training_set(text):
         entities.append((ent.start_char, ent.end_char, ent.text, ent.label_))
     if entities:
         result = [text, {"entities": entities}]
-
-    print(result)
+    return result
 
 
 def pretty_print_ner(doc: str):
@@ -152,8 +159,16 @@ def main():
     nlp.add_pipe("entity_ruler", source=custom_nlp, before="ner")
 
     # text = get_puzzle(20)  # einstein
-    text = get_puzzles_in_interval(1, 10)
-    create_training_set(text)
+    # Generates a Train DATA file with the first 10 clues and the found entities
+    clues_list = get_puzzles_in_interval(1, 10)
+    TRAIN_DATA = []
+    for clue in clues_list:
+        ner_clue = create_training_set_for_a_puzzle(clue)
+        if ner_clue:
+            TRAIN_DATA.append(ner_clue)
+
+    print(len(TRAIN_DATA))
+    save_data("training_data/first_10_puzzles.json", TRAIN_DATA)
 
     # This will display nicely NER at this address  http://0.0.0.0:5001
     # doc = nlp(text)
