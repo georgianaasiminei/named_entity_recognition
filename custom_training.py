@@ -1,9 +1,12 @@
+import random
 from typing import List, Tuple
 
 import spacy
 from spacy.lang.en import English
 from spacy import displacy
 import json
+
+from spacy.training.example import Example
 
 from repository.puzzle_repository import get_puzzle, get_puzzles_in_interval
 
@@ -118,10 +121,21 @@ def create_training_set_for_a_puzzle(text: str) -> List[Tuple]:
     entities = []
     result = []
     for ent in doc.ents:
-        entities.append((ent.start_char, ent.end_char, ent.text, ent.label_))
+        entities.append((ent.start_char, ent.end_char, ent.label_))
     if entities:
         result = [text, {"entities": entities}]
     return result
+
+
+def create_train_data_file(clues_list: List[str]):
+    TRAIN_DATA = []
+    for clue in clues_list:
+        ner_clue = create_training_set_for_a_puzzle(clue)
+        if ner_clue:
+            TRAIN_DATA.append(ner_clue)
+
+    print(len(TRAIN_DATA))
+    save_data("training_data/first_10_puzzles.json", TRAIN_DATA)
 
 
 def pretty_print_ner(doc: str):
@@ -142,6 +156,43 @@ def pretty_print_ner(doc: str):
     displacy.serve(doc, style="ent", port=5001, options=options)
 
 
+def train_spacy(data, iterations):
+    TRAIN_DATA = data
+    custom_nlp = spacy.load("puzzle_ner")
+    nlp = spacy.load("en_core_web_sm")
+    nlp.add_pipe("entity_ruler", source=custom_nlp, before="ner")
+    ner = nlp.get_pipe("ner")
+
+    # nlp = spacy.blank("en")
+    # if "ner" not in nlp.pipe_names:
+    #     ner = nlp.create_pipe("ner")
+    #     nlp.add_pipe("ner", last=True)
+    for _, annotations in TRAIN_DATA:
+        for ent in annotations.get("entities"):
+            ner.add_label(ent[2])
+
+    other_pipes = [pipe for pipe in nlp.pipe_names if pipe != "ner" and pipe != "entity_ruler"]
+    with nlp.disable_pipes(*other_pipes):
+        # optimizer = nlp.begin_training()
+        optimizer = nlp.create_optimizer()
+        for itn in range(iterations):
+            print(f"Starting iteration {str(itn)}")
+            random.shuffle(TRAIN_DATA)
+            losses = {}
+            for text, annotations in TRAIN_DATA:
+                # create Example
+                doc = nlp.make_doc(text)
+                example = Example.from_dict(doc, annotations)
+                # Update the model
+                nlp.update([example],
+                           drop=0.2,
+                           sgd=optimizer,
+                           losses=losses
+                           )
+            print(losses)
+    return nlp
+
+
 def main():
     # test_rules_on_puzzle()
 
@@ -154,25 +205,37 @@ def main():
     # generate_rules()
 
     # Create an enhanced nlp pipe from the original one by adding the custom rules
-    custom_nlp = spacy.load("puzzle_ner")
-    nlp = spacy.load("en_core_web_sm")
-    nlp.add_pipe("entity_ruler", source=custom_nlp, before="ner")
+    # custom_nlp = spacy.load("puzzle_ner")
+    # nlp = spacy.load("en_core_web_sm")
+    # nlp.add_pipe("entity_ruler", source=custom_nlp, before="ner")
 
     # text = get_puzzle(20)  # einstein
     # Generates a Train DATA file with the first 10 clues and the found entities
-    clues_list = get_puzzles_in_interval(1, 10)
-    TRAIN_DATA = []
-    for clue in clues_list:
-        ner_clue = create_training_set_for_a_puzzle(clue)
-        if ner_clue:
-            TRAIN_DATA.append(ner_clue)
+    # clues_list = get_puzzles_in_interval(1, 10)
+    # create_train_data_file(clues_list)
 
-    print(len(TRAIN_DATA))
-    save_data("training_data/first_10_puzzles.json", TRAIN_DATA)
+    # TRAIN_DATA = load_data("training_data/first_10_puzzles.json")
+    # print(TRAIN_DATA)
+
+    # TRAIN data and create a new nlp model
+    # nlp = train_spacy(TRAIN_DATA, 30)
+    # nlp.to_disk("ner_first_10_puzzles_model")
+
+    # Test the model
+    test = get_puzzle(20)  # einstein
+    print(test)
+    # nlp = spacy.load("ner_first_10_puzzles_model")
+    nlp = spacy.load("en_core_web_sm")
+    doc = nlp(test)
+    # for ent in doc.ents:
+    #     print(ent.text, ent.label_)
+
+    pretty_print_ner(doc)
 
     # This will display nicely NER at this address  http://0.0.0.0:5001
     # doc = nlp(text)
-    # pretty_print_ner(doc)
+
+    pretty_print_ner(doc)
 
 
 if __name__ == '__main__':

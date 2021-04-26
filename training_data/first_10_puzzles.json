@@ -6,169 +6,141 @@
                 [
                     0,
                     6,
-                    "Joshua",
                     "PERSON"
                 ],
                 [
                     13,
                     16,
-                    "one",
                     "CARDINAL"
                 ],
                 [
                     50,
                     55,
-                    "Black",
                     "COLOR"
                 ],
                 [
                     108,
                     114,
-                    "Joshua",
                     "PERSON"
                 ],
                 [
                     121,
                     127,
-                    "Horror",
                     "CATEGORY"
                 ],
                 [
                     140,
                     151,
-                    "14-year-old",
                     "DATE"
                 ],
                 [
                     166,
                     171,
-                    "third",
                     "ORDINAL"
                 ],
                 [
                     202,
                     205,
-                    "Red",
                     "COLOR"
                 ],
                 [
                     237,
                     248,
-                    "13-year-old",
                     "DATE"
                 ],
                 [
                     275,
                     281,
-                    "Action",
                     "CATEGORY"
                 ],
                 [
                     305,
                     311,
-                    "Daniel",
                     "PERSON"
                 ],
                 [
                     318,
                     326,
-                    "Thriller",
                     "CATEGORY"
                 ],
                 [
                     363,
                     370,
-                    "Cookies",
                     "PRODUCT"
                 ],
                 [
                     377,
                     380,
-                    "one",
                     "CARDINAL"
                 ],
                 [
                     414,
                     419,
-                    "Black",
                     "COLOR"
                 ],
                 [
                     470,
                     478,
-                    "Thriller",
                     "CATEGORY"
                 ],
                 [
                     515,
                     523,
-                    "Crackers",
                     "PRODUCT"
                 ],
                 [
                     569,
                     575,
-                    "Comedy",
                     "CATEGORY"
                 ],
                 [
                     604,
                     607,
-                    "Red",
                     "COLOR"
                 ],
                 [
                     663,
                     670,
-                    "Popcorn",
                     "PRODUCT"
                 ],
                 [
                     675,
                     683,
-                    "Nicholas",
                     "PERSON"
                 ],
                 [
                     703,
                     706,
-                    "one",
                     "CARDINAL"
                 ],
                 [
                     740,
                     748,
-                    "Thriller",
                     "CATEGORY"
                 ],
                 [
                     757,
                     765,
-                    "Nicholas",
                     "PERSON"
                 ],
                 [
                     787,
                     793,
-                    "Joshua",
                     "PERSON"
                 ],
                 [
                     798,
                     804,
-                    "Daniel",
                     "PERSON"
                 ],
                 [
                     828,
                     833,
-                    "first",
                     "ORDINAL"
                 ],
                 [
                     866,
                     871,
-                    "Green",
                     "COLOR"
                 ]
             ]
@@ -181,259 +153,216 @@
                 [
                     39,
                     55,
-                    "the Palace Hotel",
                     "FAC"
                 ],
                 [
                     79,
                     82,
-                    "150",
                     "CARDINAL"
                 ],
                 [
                     112,
                     118,
-                    "second",
                     "ORDINAL"
                 ],
                 [
                     156,
                     159,
-                    "30s",
                     "DATE"
                 ],
                 [
                     165,
                     170,
-                    "White",
                     "COLOR"
                 ],
                 [
                     265,
                     271,
-                    "German",
                     "NORP"
                 ],
                 [
                     296,
                     304,
-                    "American",
                     "NORP"
                 ],
                 [
                     345,
                     348,
-                    "250",
                     "CARDINAL"
                 ],
                 [
                     363,
                     368,
-                    "White",
                     "COLOR"
                 ],
                 [
                     391,
                     396,
-                    "Roger",
                     "PERSON"
                 ],
                 [
                     409,
                     412,
-                    "Red",
                     "COLOR"
                 ],
                 [
                     420,
                     438,
-                    "The Seashore Hotel",
                     "ORG"
                 ],
                 [
                     443,
                     446,
-                    "300",
                     "CARDINAL"
                 ],
                 [
                     454,
                     470,
-                    "The Vortex Hotel",
                     "ORG"
                 ],
                 [
                     504,
                     509,
-                    "Green",
                     "COLOR"
                 ],
                 [
                     521,
                     528,
-                    "Italian",
                     "NORP"
                 ],
                 [
                     552,
                     555,
-                    "50s",
                     "DATE"
                 ],
                 [
                     576,
                     579,
-                    "250",
                     "CARDINAL"
                 ],
                 [
                     633,
                     638,
-                    "Roger",
                     "PERSON"
                 ],
                 [
                     647,
                     652,
-                    "first",
                     "ORDINAL"
                 ],
                 [
                     703,
                     708,
-                    "Paris",
                     "GPE"
                 ],
                 [
                     714,
                     719,
-                    "Green",
                     "COLOR"
                 ],
                 [
                     773,
                     776,
-                    "200",
                     "CARDINAL"
                 ],
                 [
                     784,
                     787,
-                    "Ian",
                     "PERSON"
                 ],
                 [
                     801,
                     806,
-                    "first",
                     "ORDINAL"
                 ],
                 [
                     814,
                     829,
-                    "The Royal Hotel",
                     "ORG"
                 ],
                 [
                     874,
                     880,
-                    "French",
                     "NORP"
                 ],
                 [
                     885,
                     901,
-                    "the Mirage Hotel",
                     "ORG"
                 ],
                 [
                     922,
                     929,
-                    "Italian",
                     "NORP"
                 ],
                 [
                     939,
                     945,
-                    "fourth",
                     "ORDINAL"
                 ],
                 [
                     953,
                     968,
-                    "The Royal Hotel",
                     "ORG"
                 ],
                 [
                     972,
                     977,
-                    "White",
                     "COLOR"
                 ],
                 [
                     979,
                     985,
-                    "Calvin",
                     "PERSON"
                 ],
                 [
                     998,
                     1004,
-                    "fourth",
                     "ORDINAL"
                 ],
                 [
                     1016,
                     1021,
-                    "Green",
                     "COLOR"
                 ],
                 [
                     1086,
                     1098,
-                    "World War II",
                     "EVENT"
                 ],
                 [
                     1110,
                     1115,
-                    "White",
                     "COLOR"
                 ],
                 [
                     1158,
                     1161,
-                    "30s",
                     "DATE"
                 ],
                 [
                     1184,
                     1190,
-                    "Calvin",
                     "PERSON"
                 ],
                 [
                     1216,
                     1220,
-                    "Blue",
                     "COLOR"
                 ],
                 [
                     1252,
                     1259,
-                    "Derrick",
                     "PERSON"
                 ],
                 [
                     1283,
                     1288,
-                    "third",
                     "ORDINAL"
                 ],
                 [
                     1324,
                     1344,
-                    "The Great Depression",
                     "EVENT"
                 ]
             ]
@@ -446,253 +375,211 @@
                 [
                     0,
                     2,
-                    "Jo",
                     "PERSON"
                 ],
                 [
                     13,
                     24,
-                    "Wispa Bites",
                     "WORK_OF_ART"
                 ],
                 [
                     46,
                     53,
-                    "Hamster",
                     "ANIMAL"
                 ],
                 [
                     60,
                     68,
-                    "Swimming",
                     "ACTIVITY"
                 ],
                 [
                     70,
                     76,
-                    "Hannah",
                     "PERSON"
                 ],
                 [
                     82,
                     92,
-                    "Dairy Milk",
                     "WORK_OF_ART"
                 ],
                 [
                     94,
                     101,
-                    "Jessica",
                     "PERSON"
                 ],
                 [
                     120,
                     128,
-                    "Georgina",
                     "PERSON"
                 ],
                 [
                     130,
                     134,
-                    "Lucy",
                     "PERSON"
                 ],
                 [
                     142,
                     147,
-                    "first",
                     "ORDINAL"
                 ],
                 [
                     165,
                     170,
-                    "first",
                     "ORDINAL"
                 ],
                 [
                     197,
                     205,
-                    "Swimming",
                     "ACTIVITY"
                 ],
                 [
                     227,
                     237,
-                    "Milky Bars",
                     "WORK_OF_ART"
                 ],
                 [
                     245,
                     250,
-                    "Horse",
                     "ANIMAL"
                 ],
                 [
                     282,
                     292,
-                    "Dairy Milk",
                     "WORK_OF_ART"
                 ],
                 [
                     294,
                     301,
-                    "Jessica",
                     "PERSON"
                 ],
                 [
                     308,
                     313,
-                    "Green",
                     "COLOR"
                 ],
                 [
                     367,
                     373,
-                    "Tobago",
                     "GPE"
                 ],
                 [
                     409,
                     417,
-                    "Maldives",
                     "GPE"
                 ],
                 [
                     424,
                     429,
-                    "Lilac",
                     "COLOR"
                 ],
                 [
                     452,
                     463,
-                    "Wispa Bites",
                     "WORK_OF_ART"
                 ],
                 [
                     507,
                     514,
-                    "Florida",
                     "GPE"
                 ],
                 [
                     537,
                     541,
-                    "Pink",
                     "COLOR"
                 ],
                 [
                     557,
                     564,
-                    "Florida",
                     "GPE"
                 ],
                 [
                     586,
                     591,
-                    "first",
                     "ORDINAL"
                 ],
                 [
                     610,
                     615,
-                    "Lilac",
                     "COLOR"
                 ],
                 [
                     637,
                     641,
-                    "Blue",
                     "COLOR"
                 ],
                 [
                     649,
                     654,
-                    "Puppy",
                     "ANIMAL"
                 ],
                 [
                     677,
                     683,
-                    "Skiing",
                     "ACTIVITY"
                 ],
                 [
                     718,
                     725,
-                    "Hamster",
                     "ANIMAL"
                 ],
                 [
                     771,
                     777,
-                    "Tennis",
                     "ACTIVITY"
                 ],
                 [
                     784,
                     796,
-                    "Horse riding",
                     "ACTIVITY"
                 ],
                 [
                     834,
                     844,
-                    "Milky Bars",
                     "WORK_OF_ART"
                 ],
                 [
                     851,
                     856,
-                    "Boost",
                     "WORK_OF_ART"
                 ],
                 [
                     877,
                     883,
-                    "Purple",
                     "COLOR"
                 ],
                 [
                     899,
                     905,
-                    "Canada",
                     "GPE"
                 ],
                 [
                     926,
                     935,
-                    "Crunchies",
                     "WORK_OF_ART"
                 ],
                 [
                     943,
                     949,
-                    "Rabbit",
                     "ANIMAL"
                 ],
                 [
                     970,
                     976,
-                    "Skiing",
                     "ACTIVITY"
                 ],
                 [
                     1009,
                     1025,
-                    "Ten-pin bowlings",
                     "ACTIVITY"
                 ],
                 [
                     1027,
                     1034,
-                    "Jessica",
                     "PERSON"
                 ],
                 [
                     1050,
                     1059,
-                    "Australia",
                     "GPE"
                 ]
             ]
@@ -705,271 +592,226 @@
                 [
                     7,
                     13,
-                    "fourth",
                     "ORDINAL"
                 ],
                 [
                     44,
                     54,
-                    "Strawberry",
                     "FRUIT"
                 ],
                 [
                     80,
                     90,
-                    "Strawberry",
                     "FRUIT"
                 ],
                 [
                     137,
                     140,
-                    "Art",
                     "DOMAIN"
                 ],
                 [
                     171,
                     176,
-                    "Apple",
                     "ORG"
                 ],
                 [
                     199,
                     204,
-                    "Riley",
                     "PERSON"
                 ],
                 [
                     239,
                     244,
-                    "Roman",
                     "NORP"
                 ],
                 [
                     280,
                     285,
-                    "Green",
                     "COLOR"
                 ],
                 [
                     304,
                     309,
-                    "Apple",
                     "FRUIT"
                 ],
                 [
                     324,
                     330,
-                    "fourth",
                     "ORDINAL"
                 ],
                 [
                     374,
                     382,
-                    "Religion",
                     "DOMAIN"
                 ],
                 [
                     384,
                     400,
-                    "The 12 years old",
                     "DATE"
                 ],
                 [
                     433,
                     449,
-                    "the 11 years old",
                     "DATE"
                 ],
                 [
                     459,
                     462,
-                    "one",
                     "CARDINAL"
                 ],
                 [
                     501,
                     509,
-                    "Egyptian",
                     "NORP"
                 ],
                 [
                     545,
                     550,
-                    "Black",
                     "COLOR"
                 ],
                 [
                     598,
                     605,
-                    "Science",
                     "DOMAIN"
                 ],
                 [
                     631,
                     634,
-                    "Red",
                     "COLOR"
                 ],
                 [
                     678,
                     681,
-                    "Red",
                     "COLOR"
                 ],
                 [
                     737,
                     742,
-                    "White",
                     "COLOR"
                 ],
                 [
                     768,
                     777,
-                    "Cranberry",
                     "FRUIT"
                 ],
                 [
                     794,
                     799,
-                    "Greek",
                     "NORP"
                 ],
                 [
                     814,
                     818,
-                    "Ella",
                     "PERSON"
                 ],
                 [
                     829,
                     834,
-                    "third",
                     "ORDINAL"
                 ],
                 [
                     845,
                     861,
-                    "The 12 years old",
                     "DATE"
                 ],
                 [
                     909,
                     921,
-                    "Architecture",
                     "DOMAIN"
                 ],
                 [
                     923,
                     928,
-                    "Riley",
                     "PERSON"
                 ],
                 [
                     982,
                     987,
-                    "Roman",
                     "NORP"
                 ],
                 [
                     1020,
                     1029,
-                    "Cranberry",
                     "FRUIT"
                 ],
                 [
                     1049,
                     1073,
-                    "between the 13 years old",
                     "DATE"
                 ],
                 [
                     1101,
                     1111,
-                    "Grapefruit",
                     "FRUIT"
                 ],
                 [
                     1137,
                     1140,
-                    "one",
                     "CARDINAL"
                 ],
                 [
                     1176,
                     1183,
-                    "Science",
                     "DOMAIN"
                 ],
                 [
                     1188,
                     1191,
-                    "one",
                     "CARDINAL"
                 ],
                 [
                     1226,
                     1238,
-                    "Architecture",
                     "DOMAIN"
                 ],
                 [
                     1240,
                     1244,
-                    "Lily",
                     "PERSON"
                 ],
                 [
                     1291,
                     1298,
-                    "Economy",
                     "DOMAIN"
                 ],
                 [
                     1300,
                     1307,
-                    "Makayla",
                     "PERSON"
                 ],
                 [
                     1311,
                     1313,
-                    "10",
                     "CARDINAL"
                 ],
                 [
                     1342,
                     1347,
-                    "Aztec",
                     "NORP"
                 ],
                 [
                     1409,
                     1414,
-                    "Roman",
                     "NORP"
                 ],
                 [
                     1459,
                     1466,
-                    "Chinese",
                     "NORP"
                 ],
                 [
                     1520,
                     1523,
-                    "one",
                     "CARDINAL"
                 ],
                 [
                     1544,
                     1550,
-                    "second",
                     "ORDINAL"
                 ],
                 [
                     1583,
                     1586,
-                    "Art",
                     "DOMAIN"
                 ]
             ]
@@ -982,301 +824,251 @@
                 [
                     26,
                     39,
-                    "San Francisco",
                     "GPE"
                 ],
                 [
                     87,
                     97,
-                    "$5 million",
                     "MONEY"
                 ],
                 [
                     98,
                     108,
-                    "last month",
                     "DATE"
                 ],
                 [
                     139,
                     150,
-                    "Los Angeles",
                     "GPE"
                 ],
                 [
                     174,
                     180,
-                    "fourth",
                     "ORDINAL"
                 ],
                 [
                     220,
                     230,
-                    "Healthcare",
                     "DOMAIN"
                 ],
                 [
                     268,
                     278,
-                    "$3 million",
                     "MONEY"
                 ],
                 [
                     279,
                     289,
-                    "last month",
                     "DATE"
                 ],
                 [
                     336,
                     339,
-                    "Red",
                     "COLOR"
                 ],
                 [
                     374,
                     384,
-                    "$2 million",
                     "MONEY"
                 ],
                 [
                     385,
                     395,
-                    "last month",
                     "DATE"
                 ],
                 [
                     419,
                     424,
-                    "fifth",
                     "ORDINAL"
                 ],
                 [
                     464,
                     472,
-                    "Internet",
                     "DOMAIN"
                 ],
                 [
                     509,
                     512,
-                    "Red",
                     "COLOR"
                 ],
                 [
                     572,
                     582,
-                    "Healthcare",
                     "DOMAIN"
                 ],
                 [
                     621,
                     626,
-                    "Miami",
                     "GPE"
                 ],
                 [
                     665,
                     675,
-                    "Clean tech",
                     "DOMAIN"
                 ],
                 [
                     712,
                     715,
-                    "Red",
                     "COLOR"
                 ],
                 [
                     767,
                     777,
-                    "$5 million",
                     "MONEY"
                 ],
                 [
                     778,
                     788,
-                    "last month",
                     "DATE"
                 ],
                 [
                     818,
                     823,
-                    "Black",
                     "COLOR"
                 ],
                 [
                     847,
                     850,
-                    "one",
                     "CARDINAL"
                 ],
                 [
                     889,
                     899,
-                    "$4 million",
                     "MONEY"
                 ],
                 [
                     911,
                     921,
-                    "last month",
                     "DATE"
                 ],
                 [
                     923,
                     927,
-                    "Matt",
                     "PERSON"
                 ],
                 [
                     943,
                     954,
-                    "45-year-old",
                     "DATE"
                 ],
                 [
                     960,
                     966,
-                    "Pierre",
                     "PERSON"
                 ],
                 [
                     1021,
                     1025,
-                    "Blue",
                     "COLOR"
                 ],
                 [
                     1035,
                     1046,
-                    "40-year-old",
                     "DATE"
                 ],
                 [
                     1089,
                     1099,
-                    "Healthcare",
                     "DOMAIN"
                 ],
                 [
                     1131,
                     1134,
-                    "Red",
                     "COLOR"
                 ],
                 [
                     1180,
                     1185,
-                    "Green",
                     "COLOR"
                 ],
                 [
                     1252,
                     1255,
-                    "Red",
                     "COLOR"
                 ],
                 [
                     1297,
                     1304,
-                    "Atlanta",
                     "GPE"
                 ],
                 [
                     1306,
                     1310,
-                    "Dave",
                     "PERSON"
                 ],
                 [
                     1341,
                     1352,
-                    "30-year-old",
                     "DATE"
                 ],
                 [
                     1385,
                     1392,
-                    "Biotech",
                     "DOMAIN"
                 ],
                 [
                     1440,
                     1447,
-                    "Atlanta",
                     "GPE"
                 ],
                 [
                     1453,
                     1464,
-                    "35-year-old",
                     "DATE"
                 ],
                 [
                     1490,
                     1494,
-                    "Adam",
                     "PERSON"
                 ],
                 [
                     1526,
                     1534,
-                    "Software",
                     "DOMAIN"
                 ],
                 [
                     1565,
                     1576,
-                    "45-year-old",
                     "DATE"
                 ],
                 [
                     1640,
                     1650,
-                    "$2 million",
                     "MONEY"
                 ],
                 [
                     1651,
                     1661,
-                    "last month",
                     "DATE"
                 ],
                 [
                     1688,
                     1692,
-                    "blue",
                     "COLOR"
                 ],
                 [
                     1714,
                     1722,
-                    "Software",
                     "DOMAIN"
                 ],
                 [
                     1738,
                     1749,
-                    "40-year-old",
                     "DATE"
                 ],
                 [
                     1785,
                     1791,
-                    "Purple",
                     "COLOR"
                 ],
                 [
                     1804,
                     1809,
-                    "first",
                     "ORDINAL"
                 ],
                 [
                     1848,
                     1856,
-                    "New York",
                     "GPE"
                 ]
             ]
@@ -1289,253 +1081,211 @@
                 [
                     0,
                     4,
-                    "Dane",
                     "NORP"
                 ],
                 [
                     15,
                     21,
-                    "fourth",
                     "ORDINAL"
                 ],
                 [
                     56,
                     63,
-                    "Economy",
                     "DOMAIN"
                 ],
                 [
                     117,
                     121,
-                    "Cars",
                     "DOMAIN"
                 ],
                 [
                     127,
                     135,
-                    "Musician",
                     "ACTIVITY"
                 ],
                 [
                     165,
                     170,
-                    "Black",
                     "COLOR"
                 ],
                 [
                     177,
                     182,
-                    "Randy",
                     "PERSON"
                 ],
                 [
                     194,
                     198,
-                    "Dane",
                     "NORP"
                 ],
                 [
                     264,
                     271,
-                    "Economy",
                     "DOMAIN"
                 ],
                 [
                     277,
                     285,
-                    "Salesman",
                     "ACTIVITY"
                 ],
                 [
                     303,
                     308,
-                    "first",
                     "ORDINAL"
                 ],
                 [
                     358,
                     367,
-                    "Chinstrap",
                     "WORK_OF_ART"
                 ],
                 [
                     400,
                     404,
-                    "Dane",
                     "PERSON"
                 ],
                 [
                     424,
                     428,
-                    "Blue",
                     "COLOR"
                 ],
                 [
                     477,
                     484,
-                    "Economy",
                     "DOMAIN"
                 ],
                 [
                     489,
                     493,
-                    "Dane",
                     "NORP"
                 ],
                 [
                     514,
                     524,
-                    "Accountant",
                     "ACTIVITY"
                 ],
                 [
                     531,
                     534,
-                    "one",
                     "CARDINAL"
                 ],
                 [
                     555,
                     560,
-                    "fifth",
                     "ORDINAL"
                 ],
                 [
                     597,
                     605,
-                    "Religion",
                     "DOMAIN"
                 ],
                 [
                     625,
                     628,
-                    "Red",
                     "COLOR"
                 ],
                 [
                     651,
                     659,
-                    "Religion",
                     "DOMAIN"
                 ],
                 [
                     665,
                     672,
-                    "Teacher",
                     "ACTIVITY"
                 ],
                 [
                     704,
                     712,
-                    "Salesman",
                     "ACTIVITY"
                 ],
                 [
                     714,
                     719,
-                    "Simon",
                     "PERSON"
                 ],
                 [
                     749,
                     753,
-                    "Blue",
                     "COLOR"
                 ],
                 [
                     764,
                     771,
-                    "Teacher",
                     "ACTIVITY"
                 ],
                 [
                     803,
                     814,
-                    "35-year-old",
                     "DATE"
                 ],
                 [
                     853,
                     861,
-                    "Van dyke",
                     "WORK_OF_ART"
                 ],
                 [
                     898,
                     909,
-                    "45-year-old",
                     "DATE"
                 ],
                 [
                     915,
                     921,
-                    "Martin",
                     "PERSON"
                 ],
                 [
                     966,
                     974,
-                    "Van dyke",
                     "WORK_OF_ART"
                 ],
                 [
                     1007,
                     1015,
-                    "Politics",
                     "DOMAIN"
                 ],
                 [
                     1087,
                     1093,
-                    "Sports",
                     "DOMAIN"
                 ],
                 [
                     1095,
                     1100,
-                    "Simon",
                     "PERSON"
                 ],
                 [
                     1142,
                     1147,
-                    "White",
                     "COLOR"
                 ],
                 [
                     1168,
                     1178,
-                    "Accountant",
                     "ACTIVITY"
                 ],
                 [
                     1187,
                     1192,
-                    "fifth",
                     "ORDINAL"
                 ],
                 [
                     1230,
                     1236,
-                    "Anchor",
                     "WORK_OF_ART"
                 ],
                 [
                     1266,
                     1278,
-                    "Mutton chops",
                     "WORK_OF_ART"
                 ],
                 [
                     1323,
                     1332,
-                    "Chinstrap",
                     "WORK_OF_ART"
                 ],
                 [
                     1363,
                     1369,
-                    "Anchor",
                     "WORK_OF_ART"
                 ]
             ]
@@ -1548,271 +1298,226 @@
                 [
                     19,
                     24,
-                    "Grape",
                     "FRUIT"
                 ],
                 [
                     62,
                     67,
-                    "Green",
                     "COLOR"
                 ],
                 [
                     79,
                     83,
-                    "Chef",
                     "ACTIVITY"
                 ],
                 [
                     109,
                     114,
-                    "Pilot",
                     "ACTIVITY"
                 ],
                 [
                     138,
                     144,
-                    "Orange",
                     "FRUIT"
                 ],
                 [
                     171,
                     181,
-                    "Translator",
                     "ACTIVITY"
                 ],
                 [
                     214,
                     219,
-                    "Bacon",
                     "PRODUCT"
                 ],
                 [
                     234,
                     245,
-                    "30-year-old",
                     "DATE"
                 ],
                 [
                     297,
                     302,
-                    "Grape",
                     "FRUIT"
                 ],
                 [
                     310,
                     318,
-                    "Michaela",
                     "PERSON"
                 ],
                 [
                     350,
                     356,
-                    "Yellow",
                     "COLOR"
                 ],
                 [
                     368,
                     379,
-                    "40-year-old",
                     "DATE"
                 ],
                 [
                     417,
                     428,
-                    "35-year-old",
                     "DATE"
                 ],
                 [
                     440,
                     444,
-                    "Chef",
                     "ACTIVITY"
                 ],
                 [
                     491,
                     496,
-                    "Apple",
                     "FRUIT"
                 ],
                 [
                     524,
                     530,
-                    "Yellow",
                     "COLOR"
                 ],
                 [
                     562,
                     573,
-                    "30-year-old",
                     "DATE"
                 ],
                 [
                     605,
                     609,
-                    "Pork",
                     "PRODUCT"
                 ],
                 [
                     635,
                     643,
-                    "Michaela",
                     "PERSON"
                 ],
                 [
                     656,
                     661,
-                    "Mango",
                     "FRUIT"
                 ],
                 [
                     672,
                     675,
-                    "one",
                     "CARDINAL"
                 ],
                 [
                     695,
                     706,
-                    "40-year-old",
                     "DATE"
                 ],
                 [
                     718,
                     726,
-                    "Engineer",
                     "ACTIVITY"
                 ],
                 [
                     757,
                     768,
-                    "35-year-old",
                     "DATE"
                 ],
                 [
                     776,
                     782,
-                    "Eliana",
                     "PERSON"
                 ],
                 [
                     798,
                     808,
-                    "Translator",
                     "ACTIVITY"
                 ],
                 [
                     831,
                     834,
-                    "Ham",
                     "PRODUCT"
                 ],
                 [
                     865,
                     871,
-                    "Yasmin",
                     "PERSON"
                 ],
                 [
                     897,
                     902,
-                    "Bacon",
                     "PRODUCT"
                 ],
                 [
                     948,
                     951,
-                    "Red",
                     "COLOR"
                 ],
                 [
                     972,
                     978,
-                    "Cheese",
                     "PRODUCT"
                 ],
                 [
                     996,
                     1001,
-                    "first",
                     "ORDINAL"
                 ],
                 [
                     1034,
                     1039,
-                    "White",
                     "COLOR"
                 ],
                 [
                     1067,
                     1073,
-                    "Yellow",
                     "COLOR"
                 ],
                 [
                     1105,
                     1116,
-                    "30-year-old",
                     "DATE"
                 ],
                 [
                     1147,
                     1152,
-                    "Green",
                     "COLOR"
                 ],
                 [
                     1175,
                     1181,
-                    "Eliana",
                     "PERSON"
                 ],
                 [
                     1228,
                     1234,
-                    "Orange",
                     "FRUIT"
                 ],
                 [
                     1262,
                     1268,
-                    "Yellow",
                     "COLOR"
                 ],
                 [
                     1303,
                     1308,
-                    "Lydia",
                     "PERSON"
                 ],
                 [
                     1333,
                     1341,
-                    "Engineer",
                     "ACTIVITY"
                 ],
                 [
                     1346,
                     1349,
-                    "one",
                     "CARDINAL"
                 ],
                 [
                     1386,
                     1390,
-                    "Pork",
                     "PRODUCT"
                 ],
                 [
                     1401,
                     1409,
-                    "Michaela",
                     "PERSON"
                 ],
                 [
                     1422,
                     1430,
-                    "Engineer",
                     "ACTIVITY"
                 ]
             ]
@@ -1825,283 +1530,236 @@
                 [
                     36,
                     44,
-                    "Baseball",
                     "ACTIVITY"
                 ],
                 [
                     78,
                     82,
-                    "Tuna",
                     "PRODUCT"
                 ],
                 [
                     98,
                     101,
-                    "one",
                     "CARDINAL"
                 ],
                 [
                     132,
                     137,
-                    "White",
                     "COLOR"
                 ],
                 [
                     168,
                     179,
-                    "15-year-old",
                     "DATE"
                 ],
                 [
                     252,
                     261,
-                    "Pineapple",
                     "FRUIT"
                 ],
                 [
                     278,
                     284,
-                    "fourth",
                     "ORDINAL"
                 ],
                 [
                     295,
                     300,
-                    "Henry",
                     "PERSON"
                 ],
                 [
                     331,
                     337,
-                    "Soccer",
                     "ACTIVITY"
                 ],
                 [
                     373,
                     383,
-                    "Grapefruit",
                     "FRUIT"
                 ],
                 [
                     423,
                     427,
-                    "Tuna",
                     "PRODUCT"
                 ],
                 [
                     453,
                     462,
-                    "Pineapple",
                     "FRUIT"
                 ],
                 [
                     504,
                     509,
-                    "Black",
                     "COLOR"
                 ],
                 [
                     525,
                     530,
-                    "third",
                     "ORDINAL"
                 ],
                 [
                     559,
                     567,
-                    "Swimming",
                     "ACTIVITY"
                 ],
                 [
                     600,
                     608,
-                    "Baseball",
                     "ACTIVITY"
                 ],
                 [
                     635,
                     644,
-                    "Pineapple",
                     "FRUIT"
                 ],
                 [
                     676,
                     687,
-                    "14-year-old",
                     "DATE"
                 ],
                 [
                     713,
                     719,
-                    "Orange",
                     "COLOR"
                 ],
                 [
                     745,
                     748,
-                    "one",
                     "CARDINAL"
                 ],
                 [
                     783,
                     788,
-                    "Green",
                     "COLOR"
                 ],
                 [
                     856,
                     865,
-                    "Pepperoni",
                     "PRODUCT"
                 ],
                 [
                     895,
                     900,
-                    "White",
                     "COLOR"
                 ],
                 [
                     947,
                     951,
-                    "blue",
                     "COLOR"
                 ],
                 [
                     960,
                     965,
-                    "black",
                     "COLOR"
                 ],
                 [
                     991,
                     995,
-                    "Joel",
                     "PERSON"
                 ],
                 [
                     1011,
                     1022,
-                    "16-year-old",
                     "DATE"
                 ],
                 [
                     1032,
                     1038,
-                    "Adrian",
                     "PERSON"
                 ],
                 [
                     1093,
                     1102,
-                    "Pepperoni",
                     "PRODUCT"
                 ],
                 [
                     1117,
                     1128,
-                    "12-year-old",
                     "DATE"
                 ],
                 [
                     1154,
                     1165,
-                    "14-year-old",
                     "DATE"
                 ],
                 [
                     1229,
                     1234,
-                    "Bacon",
                     "PRODUCT"
                 ],
                 [
                     1290,
                     1295,
-                    "White",
                     "COLOR"
                 ],
                 [
                     1309,
                     1320,
-                    "16-year-old",
                     "DATE"
                 ],
                 [
                     1329,
                     1335,
-                    "Cheese",
                     "PRODUCT"
                 ],
                 [
                     1353,
                     1358,
-                    "fifth",
                     "ORDINAL"
                 ],
                 [
                     1375,
                     1386,
-                    "13-year-old",
                     "DATE"
                 ],
                 [
                     1415,
                     1420,
-                    "White",
                     "COLOR"
                 ],
                 [
                     1447,
                     1454,
-                    "Richard",
                     "PERSON"
                 ],
                 [
                     1478,
                     1481,
-                    "Red",
                     "COLOR"
                 ],
                 [
                     1507,
                     1515,
-                    "Baseball",
                     "ACTIVITY"
                 ],
                 [
                     1561,
                     1566,
-                    "Apple",
                     "FRUIT"
                 ],
                 [
                     1592,
                     1598,
-                    "Hockey",
                     "ACTIVITY"
                 ],
                 [
                     1609,
                     1614,
-                    "fifth",
                     "ORDINAL"
                 ],
                 [
                     1625,
                     1632,
-                    "Charles",
                     "PERSON"
                 ],
                 [
                     1654,
                     1661,
-                    "Richard",
                     "PERSON"
                 ],
                 [
                     1666,
                     1672,
-                    "Adrian",
                     "PERSON"
                 ]
             ]
@@ -2114,271 +1772,226 @@
                 [
                     28,
                     34,
-                    "August",
                     "DATE"
                 ],
                 [
                     81,
                     92,
-                    "Word Search",
                     "WORK_OF_ART"
                 ],
                 [
                     113,
                     117,
-                    "Asus",
                     "ORG"
                 ],
                 [
                     181,
                     185,
-                    "June",
                     "DATE"
                 ],
                 [
                     187,
                     194,
-                    "Krystal",
                     "PERSON"
                 ],
                 [
                     203,
                     208,
-                    "Green",
                     "COLOR"
                 ],
                 [
                     231,
                     236,
-                    "fifth",
                     "ORDINAL"
                 ],
                 [
                     266,
                     278,
-                    "Zebra Puzzle",
                     "WORK_OF_ART"
                 ],
                 [
                     280,
                     286,
-                    "Monica",
                     "PERSON"
                 ],
                 [
                     309,
                     316,
-                    "History",
                     "DOMAIN"
                 ],
                 [
                     338,
                     345,
-                    "Tangram",
                     "WORK_OF_ART"
                 ],
                 [
                     381,
                     385,
-                    "Blue",
                     "COLOR"
                 ],
                 [
                     401,
                     407,
-                    "Joanna",
                     "PERSON"
                 ],
                 [
                     455,
                     462,
-                    "History",
                     "DOMAIN"
                 ],
                 [
                     485,
                     500,
-                    "Valentine's Day",
                     "DATE"
                 ],
                 [
                     552,
                     555,
-                    "Red",
                     "COLOR"
                 ],
                 [
                     571,
                     578,
-                    "Krystal",
                     "PERSON"
                 ],
                 [
                     622,
                     627,
-                    "Apple",
                     "FRUIT"
                 ],
                 [
                     651,
                     655,
-                    "Math",
                     "DOMAIN"
                 ],
                 [
                     708,
                     714,
-                    "August",
                     "DATE"
                 ],
                 [
                     720,
                     723,
-                    "one",
                     "CARDINAL"
                 ],
                 [
                     734,
                     739,
-                    "Apple",
                     "ORG"
                 ],
                 [
                     790,
                     797,
-                    "Tangram",
                     "WORK_OF_ART"
                 ],
                 [
                     816,
                     820,
-                    "Blue",
                     "COLOR"
                 ],
                 [
                     888,
                     903,
-                    "the sixth month",
                     "DATE"
                 ],
                 [
                     922,
                     935,
-                    "Jigsaw Puzzle",
                     "WORK_OF_ART"
                 ],
                 [
                     959,
                     963,
-                    "Asus",
                     "ORG"
                 ],
                 [
                     990,
                     995,
-                    "White",
                     "COLOR"
                 ],
                 [
                     1053,
                     1060,
-                    "Science",
                     "DOMAIN"
                 ],
                 [
                     1065,
                     1071,
-                    "Elaine",
                     "PERSON"
                 ],
                 [
                     1131,
                     1140,
-                    "the month",
                     "DATE"
                 ],
                 [
                     1154,
                     1163,
-                    "Halloween",
                     "DATE"
                 ],
                 [
                     1182,
                     1189,
-                    "October",
                     "DATE"
                 ],
                 [
                     1196,
                     1203,
-                    "History",
                     "DOMAIN"
                 ],
                 [
                     1229,
                     1234,
-                    "Black",
                     "COLOR"
                 ],
                 [
                     1274,
                     1281,
-                    "Samsung",
                     "ORG"
                 ],
                 [
                     1306,
                     1309,
-                    "Art",
                     "DOMAIN"
                 ],
                 [
                     1363,
                     1367,
-                    "Blue",
                     "COLOR"
                 ],
                 [
                     1400,
                     1405,
-                    "White",
                     "COLOR"
                 ],
                 [
                     1459,
                     1464,
-                    "Green",
                     "COLOR"
                 ],
                 [
                     1469,
                     1472,
-                    "Red",
                     "COLOR"
                 ],
                 [
                     1521,
                     1526,
-                    "April",
                     "DATE"
                 ],
                 [
                     1584,
                     1588,
-                    "Sony",
                     "ORG"
                 ],
                 [
                     1590,
                     1596,
-                    "Elaine",
                     "PERSON"
                 ],
                 [
                     1628,
                     1641,
-                    "Jigsaw Puzzle",
                     "WORK_OF_ART"
                 ]
             ]
@@ -2391,265 +2004,221 @@
                 [
                     19,
                     31,
-                    "Transmission",
                     "PRODUCT"
                 ],
                 [
                     85,
                     93,
-                    "Radiator",
                     "PRODUCT"
                 ],
                 [
                     110,
                     116,
-                    "second",
                     "ORDINAL"
                 ],
                 [
                     148,
                     156,
-                    "Radiator",
                     "PRODUCT"
                 ],
                 [
                     170,
                     176,
-                    "German",
                     "NORP"
                 ],
                 [
                     221,
                     233,
-                    "50,000 miles",
                     "QUANTITY"
                 ],
                 [
                     248,
                     260,
-                    "20,000 miles",
                     "QUANTITY"
                 ],
                 [
                     267,
                     270,
-                    "one",
                     "CARDINAL"
                 ],
                 [
                     288,
                     297,
-                    "Hatchback",
                     "CATEGORY"
                 ],
                 [
                     327,
                     331,
-                    "five",
                     "CARDINAL"
                 ],
                 [
                     342,
                     348,
-                    "Korean",
                     "NORP"
                 ],
                 [
                     393,
                     405,
-                    "40,000 miles",
                     "QUANTITY"
                 ],
                 [
                     411,
                     416,
-                    "White",
                     "COLOR"
                 ],
                 [
                     436,
                     445,
-                    "Crossover",
                     "CATEGORY"
                 ],
                 [
                     460,
                     472,
-                    "60,000 miles",
                     "QUANTITY"
                 ],
                 [
                     480,
                     486,
-                    "Engine",
                     "PRODUCT"
                 ],
                 [
                     500,
                     503,
-                    "SUV",
                     "CATEGORY"
                 ],
                 [
                     556,
                     562,
-                    "Melvin",
                     "PERSON"
                 ],
                 [
                     571,
                     577,
-                    "Pickup",
                     "CATEGORY"
                 ],
                 [
                     598,
                     603,
-                    "Green",
                     "COLOR"
                 ],
                 [
                     654,
                     666,
-                    "Transmission",
                     "PRODUCT"
                 ],
                 [
                     679,
                     682,
-                    "one",
                     "CARDINAL"
                 ],
                 [
                     702,
                     707,
-                    "White",
                     "COLOR"
                 ],
                 [
                     717,
                     724,
-                    "Italian",
                     "NORP"
                 ],
                 [
                     739,
                     745,
-                    "fourth",
                     "ORDINAL"
                 ],
                 [
                     759,
                     762,
-                    "one",
                     "CARDINAL"
                 ],
                 [
                     797,
                     807,
-                    "Suspension",
                     "PRODUCT"
                 ],
                 [
                     817,
                     823,
-                    "Melvin",
                     "PERSON"
                 ],
                 [
                     877,
                     883,
-                    "French",
                     "NORP"
                 ],
                 [
                     889,
                     895,
-                    "Willie",
                     "PERSON"
                 ],
                 [
                     932,
                     937,
-                    "fifth",
                     "ORDINAL"
                 ],
                 [
                     979,
                     983,
-                    "Kyle",
                     "PERSON"
                 ],
                 [
                     1014,
                     1017,
-                    "Red",
                     "COLOR"
                 ],
                 [
                     1027,
                     1031,
-                    "Blue",
                     "COLOR"
                 ],
                 [
                     1069,
                     1074,
-                    "Black",
                     "COLOR"
                 ],
                 [
                     1114,
                     1120,
-                    "Melvin",
                     "PERSON"
                 ],
                 [
                     1145,
                     1157,
-                    "50,000 miles",
                     "QUANTITY"
                 ],
                 [
                     1172,
                     1184,
-                    "20,000 miles",
                     "QUANTITY"
                 ],
                 [
                     1225,
                     1237,
-                    "40,000 miles",
                     "QUANTITY"
                 ],
                 [
                     1259,
                     1265,
-                    "Airbag",
                     "PRODUCT"
                 ],
                 [
                     1307,
                     1312,
-                    "Green",
                     "COLOR"
                 ],
                 [
                     1318,
                     1322,
-                    "Kyle",
                     "PERSON"
                 ],
                 [
                     1374,
                     1377,
-                    "SUV",
                     "CATEGORY"
                 ],
                 [
                     1413,
                     1418,
-                    "Damon",
                     "PERSON"
                 ]
             ]

@@ -1,0 +1,194 @@
+{"label":"PERSON","pattern":"Joshua"}
+{"label":"PERSON","pattern":"Daniel"}
+{"label":"PERSON","pattern":"Nicholas"}
+{"label":"PERSON","pattern":"Calvin"}
+{"label":"PERSON","pattern":"Roger"}
+{"label":"PERSON","pattern":"Ian"}
+{"label":"PERSON","pattern":"Derrick"}
+{"label":"PERSON","pattern":"Jo"}
+{"label":"PERSON","pattern":"Hannah"}
+{"label":"PERSON","pattern":"Jessica"}
+{"label":"PERSON","pattern":"Lucy"}
+{"label":"PERSON","pattern":"Georgina"}
+{"label":"PERSON","pattern":"Riley"}
+{"label":"PERSON","pattern":"Ella"}
+{"label":"PERSON","pattern":"Lily"}
+{"label":"PERSON","pattern":"Makayla"}
+{"label":"PERSON","pattern":"Matt"}
+{"label":"PERSON","pattern":"Pierre"}
+{"label":"PERSON","pattern":"Dave"}
+{"label":"PERSON","pattern":"Adam"}
+{"label":"PERSON","pattern":"Dane"}
+{"label":"PERSON","pattern":"Randy"}
+{"label":"PERSON","pattern":"Simon"}
+{"label":"PERSON","pattern":"Martin"}
+{"label":"PERSON","pattern":"Michaela"}
+{"label":"PERSON","pattern":"Eliana"}
+{"label":"PERSON","pattern":"Yasmin"}
+{"label":"PERSON","pattern":"Lydia"}
+{"label":"PERSON","pattern":"Henry"}
+{"label":"PERSON","pattern":"Joel"}
+{"label":"PERSON","pattern":"Adrian"}
+{"label":"PERSON","pattern":"Richard"}
+{"label":"PERSON","pattern":"Charles"}
+{"label":"PERSON","pattern":"Krystal"}
+{"label":"PERSON","pattern":"Elaine"}
+{"label":"PERSON","pattern":"Joanna"}
+{"label":"PERSON","pattern":"Tammy"}
+{"label":"PERSON","pattern":"Monica"}
+{"label":"PERSON","pattern":"Kyle"}
+{"label":"PERSON","pattern":"Damon"}
+{"label":"PERSON","pattern":"Melvin"}
+{"label":"PERSON","pattern":"Willie"}
+{"label":"FRUIT","pattern":"Strawberry"}
+{"label":"FRUIT","pattern":"Apple"}
+{"label":"FRUIT","pattern":"Cranberry"}
+{"label":"FRUIT","pattern":"Grapefruit"}
+{"label":"FRUIT","pattern":"Grape"}
+{"label":"FRUIT","pattern":"Orange"}
+{"label":"FRUIT","pattern":"Mango"}
+{"label":"FRUIT","pattern":"Pineapple"}
+{"label":"FRUIT","pattern":"Grapefruit"}
+{"label":"PRODUCT","pattern":"Tea"}
+{"label":"PRODUCT","pattern":"Coffee"}
+{"label":"PRODUCT","pattern":"Milk"}
+{"label":"PRODUCT","pattern":"Beer"}
+{"label":"PRODUCT","pattern":"Water"}
+{"label":"PRODUCT","pattern":"Popcorn"}
+{"label":"PRODUCT","pattern":"Crackers"}
+{"label":"PRODUCT","pattern":"Cookies"}
+{"label":"PRODUCT","pattern":"Bacon"}
+{"label":"PRODUCT","pattern":"Pork"}
+{"label":"PRODUCT","pattern":"Ham"}
+{"label":"PRODUCT","pattern":"Cheese"}
+{"label":"PRODUCT","pattern":"Tuna"}
+{"label":"PRODUCT","pattern":"Pepperoni"}
+{"label":"PRODUCT","pattern":"Airbag"}
+{"label":"PRODUCT","pattern":"Engine"}
+{"label":"PRODUCT","pattern":"Radiator"}
+{"label":"PRODUCT","pattern":"Transmission"}
+{"label":"PRODUCT","pattern":"Suspension"}
+{"label":"WORK_OF_ART","pattern":"Pall Mall"}
+{"label":"WORK_OF_ART","pattern":"Dunhill"}
+{"label":"WORK_OF_ART","pattern":"Blends"}
+{"label":"WORK_OF_ART","pattern":"Blue Master"}
+{"label":"WORK_OF_ART","pattern":"Prince"}
+{"label":"WORK_OF_ART","pattern":"Wispa Bites"}
+{"label":"WORK_OF_ART","pattern":"Dairy Milk"}
+{"label":"WORK_OF_ART","pattern":"Milky Bars"}
+{"label":"WORK_OF_ART","pattern":"Boost"}
+{"label":"WORK_OF_ART","pattern":"Crunchies"}
+{"label":"WORK_OF_ART","pattern":"Chinstrap"}
+{"label":"WORK_OF_ART","pattern":"Van dyke"}
+{"label":"WORK_OF_ART","pattern":"Anchor"}
+{"label":"WORK_OF_ART","pattern":"Mutton chops"}
+{"label":"WORK_OF_ART","pattern":"Chinstrap"}
+{"label":"WORK_OF_ART","pattern":"Word Search"}
+{"label":"WORK_OF_ART","pattern":"Zebra Puzzle"}
+{"label":"WORK_OF_ART","pattern":"Tangram"}
+{"label":"WORK_OF_ART","pattern":"Jigsaw Puzzle"}
+{"label":"ANIMAL","pattern":"Dog"}
+{"label":"ANIMAL","pattern":"Dogs"}
+{"label":"ANIMAL","pattern":"Bird"}
+{"label":"ANIMAL","pattern":"Birds"}
+{"label":"ANIMAL","pattern":"Cat"}
+{"label":"ANIMAL","pattern":"Cats"}
+{"label":"ANIMAL","pattern":"Horse"}
+{"label":"ANIMAL","pattern":"Horses"}
+{"label":"ANIMAL","pattern":"Puppy"}
+{"label":"ANIMAL","pattern":"Hamster"}
+{"label":"ANIMAL","pattern":"Rabbit"}
+{"label":"ANIMAL","pattern":"Rabbits"}
+{"label":"COLOR","pattern":"Black"}
+{"label":"COLOR","pattern":"Blue"}
+{"label":"COLOR","pattern":"Green"}
+{"label":"COLOR","pattern":"Lilac"}
+{"label":"COLOR","pattern":"Orange"}
+{"label":"COLOR","pattern":"Pink"}
+{"label":"COLOR","pattern":"Purple"}
+{"label":"COLOR","pattern":"Red"}
+{"label":"COLOR","pattern":"White"}
+{"label":"COLOR","pattern":"Yellow"}
+{"label":"COLOR","pattern":"black"}
+{"label":"COLOR","pattern":"blue"}
+{"label":"COLOR","pattern":"green"}
+{"label":"COLOR","pattern":"lilac"}
+{"label":"COLOR","pattern":"orange"}
+{"label":"COLOR","pattern":"pink"}
+{"label":"COLOR","pattern":"purple"}
+{"label":"COLOR","pattern":"red"}
+{"label":"COLOR","pattern":"white"}
+{"label":"COLOR","pattern":"yellow"}
+{"label":"ACTIVITY","pattern":"Skiing"}
+{"label":"ACTIVITY","pattern":"Swimming"}
+{"label":"ACTIVITY","pattern":"Tennis"}
+{"label":"ACTIVITY","pattern":"Horse riding"}
+{"label":"ACTIVITY","pattern":"Ten-pin bowlings"}
+{"label":"ACTIVITY","pattern":"Musician"}
+{"label":"ACTIVITY","pattern":"Salesman"}
+{"label":"ACTIVITY","pattern":"Accountant"}
+{"label":"ACTIVITY","pattern":"Teacher"}
+{"label":"ACTIVITY","pattern":"Chef"}
+{"label":"ACTIVITY","pattern":"Pilot"}
+{"label":"ACTIVITY","pattern":"Translator"}
+{"label":"ACTIVITY","pattern":"Engineer"}
+{"label":"ACTIVITY","pattern":"Baseball"}
+{"label":"ACTIVITY","pattern":"Soccer"}
+{"label":"ACTIVITY","pattern":"Hockey"}
+{"label":"GPE","pattern":"Florida"}
+{"label":"GPE","pattern":"Canada"}
+{"label":"GPE","pattern":"Maldives"}
+{"label":"GPE","pattern":"Australia"}
+{"label":"GPE","pattern":"Tobago"}
+{"label":"GPE","pattern":"San Francisco"}
+{"label":"GPE","pattern":"Los Angeles"}
+{"label":"GPE","pattern":"Miami"}
+{"label":"GPE","pattern":"Atlanta"}
+{"label":"GPE","pattern":"New York "}
+{"label":"ORG","pattern":"Apple"}
+{"label":"ORG","pattern":"Asus"}
+{"label":"ORG","pattern":"Google"}
+{"label":"ORG","pattern":"Samsung"}
+{"label":"ORG","pattern":"Sony"}
+{"label":"NORP","pattern":"Brit"}
+{"label":"NORP","pattern":"Swede"}
+{"label":"NORP","pattern":"Dane"}
+{"label":"NORP","pattern":"Norwegian"}
+{"label":"NORP","pattern":"German"}
+{"label":"NORP","pattern":"Chinese"}
+{"label":"NORP","pattern":"Roman"}
+{"label":"NORP","pattern":"Egyptian"}
+{"label":"NORP","pattern":"Greek"}
+{"label":"NORP","pattern":"Aztec"}
+{"label":"NORP","pattern":"American"}
+{"label":"NORP","pattern":"French"}
+{"label":"NORP","pattern":"Italian"}
+{"label":"NORP","pattern":"Korean"}
+{"label":"DOMAIN","pattern":"Art"}
+{"label":"DOMAIN","pattern":"Religion"}
+{"label":"DOMAIN","pattern":"Science"}
+{"label":"DOMAIN","pattern":"Architecture"}
+{"label":"DOMAIN","pattern":"Economy"}
+{"label":"DOMAIN","pattern":"Healthcare"}
+{"label":"DOMAIN","pattern":"Internet"}
+{"label":"DOMAIN","pattern":"Clean tech"}
+{"label":"DOMAIN","pattern":"Biotech"}
+{"label":"DOMAIN","pattern":"Software"}
+{"label":"DOMAIN","pattern":"Cars"}
+{"label":"DOMAIN","pattern":"Politics"}
+{"label":"DOMAIN","pattern":"Sports"}
+{"label":"DOMAIN","pattern":"Geography"}
+{"label":"DOMAIN","pattern":"History"}
+{"label":"DOMAIN","pattern":"Math"}
+{"label":"CATEGORY","pattern":"Horror"}
+{"label":"CATEGORY","pattern":"Comedy"}
+{"label":"CATEGORY","pattern":"Thriller"}
+{"label":"CATEGORY","pattern":"Action"}
+{"label":"CATEGORY","pattern":"Crossover"}
+{"label":"CATEGORY","pattern":"Hatchback"}
+{"label":"CATEGORY","pattern":"Pickup"}
+{"label":"CATEGORY","pattern":"SUV"}
+{"label":"DATE","pattern":"30s"}
+{"label":"DATE","pattern":"50s"}
+{"label":"DATE","pattern":"Valentine's Day"}
+{"label":"DATE","pattern":"the sixth month"}
