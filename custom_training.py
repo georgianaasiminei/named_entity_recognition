@@ -4,23 +4,10 @@ from typing import List, Tuple
 import spacy
 from spacy.lang.en import English
 from spacy import displacy
-import json
 
 from spacy.training.example import Example
 
 from repository.puzzle_repository import get_puzzle, get_puzzles_in_interval
-
-
-def load_data(file):
-    with open(file, "r", encoding="utf-8") as f:
-        data = json.load(f)
-    return data
-
-
-def save_data(file, data):
-    with open(file, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=4)
-
 
 # def test_rules_on_puzzle():
 #     # adnotam manual nationalitatile, citindu-le din fisier
@@ -46,6 +33,7 @@ def save_data(file, data):
 #     for ent in doc.ents:
 #         results.append((ent.text, ent.label_))
 #     return results
+from utils import load_data, save_data
 
 
 def _build_patterns_list(file: str, type_: str):
@@ -153,7 +141,10 @@ def pretty_print_ner(doc: str):
                  "GPE", "LANGUAGE", "LAW", "LOC", "MONEY", "NORP", "ORDINAL", "ORG", "PERCENT", "PERSON", "PRODUCT",
                  "QUANTITY", "TIME", "WORK_OF_ART"],
         "colors": colors}
-    displacy.serve(doc, style="ent", port=5001, options=options)
+    displacy.serve(doc,
+                   style="ent",
+                   port=5001,
+                   options=options)
 
 
 def train_spacy(data, iterations):
@@ -222,15 +213,13 @@ def main():
     # nlp.to_disk("ner_first_10_puzzles_model")
 
     # Test the model
-    test = get_puzzle(20)  # einstein
+    test = get_puzzle(35)  # einstein
     print(test)
-    # nlp = spacy.load("ner_first_10_puzzles_model")
-    nlp = spacy.load("en_core_web_sm")
+    nlp = spacy.load("ner_first_10_puzzles_model")
+    # nlp = spacy.load("en_core_web_sm")
     doc = nlp(test)
     # for ent in doc.ents:
     #     print(ent.text, ent.label_)
-
-    pretty_print_ner(doc)
 
     # This will display nicely NER at this address  http://0.0.0.0:5001
     # doc = nlp(text)
