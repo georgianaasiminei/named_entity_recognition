@@ -17,19 +17,20 @@
   },
   "labels":{
     "entity_ruler":[
-      "ORG",
-      "FRUIT",
+      "ACTIVITY",
+      "ANIMAL",
+      "COLOR",
+      "TIME",
       "PRODUCT",
       "DATE",
+      "ORG",
+      "NORP",
+      "PERSON",
       "DOMAIN",
       "WORK_OF_ART",
-      "ACTIVITY",
       "CATEGORY",
-      "NORP",
-      "GPE",
-      "PERSON",
-      "ANIMAL",
-      "COLOR"
+      "FRUIT",
+      "GPE"
     ]
   },
   "pipeline":[

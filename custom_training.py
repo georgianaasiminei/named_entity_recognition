@@ -64,6 +64,9 @@ def generate_rules():
     dates_patterns = _build_patterns_list("entity_rules/dates.json", "DATE")
     ruler.add_patterns(dates_patterns)
 
+    times_patterns = _build_patterns_list("entity_rules/times.json", "TIME")
+    ruler.add_patterns(times_patterns)
+
     # save the model containing the `entity_ruler` pipe
     nlp.to_disk("puzzle_ner")
 
@@ -162,6 +165,7 @@ def update_trained_model_with_new_rules():
 
     # Generates a Train DATA file with the first 10 clues and the found entities
     clues_list = get_puzzles_in_interval(1, 10)
+    # clues_list.extend(get_puzzles_in_interval(61, 69))
     clues_text = [texts for _, texts in clues_list]
     create_train_data_file(untrained_nlp, clues_text)
 
@@ -191,7 +195,7 @@ def main():
     # update_trained_model_with_new_rules()
 
     # Test the model
-    test = get_puzzle(11)
+    test = get_puzzle(69)
     print(test)
     test_model(test, "ner_first_10_puzzles_model")
 

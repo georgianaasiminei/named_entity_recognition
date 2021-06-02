@@ -122,19 +122,20 @@
       "S"
     ],
     "entity_ruler":[
-      "CATEGORY",
-      "DATE",
-      "PERSON",
-      "PRODUCT",
-      "COLOR",
-      "DOMAIN",
-      "ANIMAL",
-      "FRUIT",
-      "GPE",
-      "WORK_OF_ART",
       "ACTIVITY",
+      "ANIMAL",
+      "COLOR",
+      "TIME",
+      "PRODUCT",
+      "DATE",
+      "ORG",
       "NORP",
-      "ORG"
+      "PERSON",
+      "DOMAIN",
+      "WORK_OF_ART",
+      "CATEGORY",
+      "FRUIT",
+      "GPE"
     ],
     "ner":[
       "ACTIVITY",

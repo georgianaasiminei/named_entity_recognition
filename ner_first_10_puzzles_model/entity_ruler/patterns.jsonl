@@ -192,3 +192,6 @@
 {"label":"DATE","pattern":"50s"}
 {"label":"DATE","pattern":"Valentine's Day"}
 {"label":"DATE","pattern":"the sixth month"}
+{"label":"TIME","pattern":"18:00"}
+{"label":"TIME","pattern":"18:30"}
+{"label":"TIME","pattern":"19:00"}
