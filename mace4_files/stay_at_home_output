@@ -1,0 +1,15 @@
+set(arithmetic).
+assign(domain_size, 5).
+assign(max_models, -1).
+list(distinct).
+['White', 'Red', 'Black', 'Green', 'Blue'].
+['4', 'one', '2', '3', '5'].
+['Drawing', 'Roberts', 'Martinez', 'Smiths', 'Clarks'].
+['Pickup', 'SUV', 'Turtle', 'Crossover'].
+['Cat', 'Dog', 'Hamster'].
+['Sedan', 'Clarks'].
+['Coloring', 'Board'].
+['second', 'third'].
+['Origami', 'Davis'].
+['Puzzle'].
+end_of_list.

@@ -16,6 +16,6 @@ def get_puzzles_in_interval(from_uid: int, to_uid: int) -> List:
     retrieved_puzzles = list(Puzzle.filter(Puzzle.id >= from_uid, Puzzle.id <= to_uid))
     if not retrieved_puzzles:
         raise Exception(f"There is no puzzle with ID {from_uid}")
-    clues = [puzzle.clues for puzzle in retrieved_puzzles]
+    clues = [(puzzle.title, puzzle.clues) for puzzle in retrieved_puzzles]
     # result = "\n\n".join(clues)
     return clues

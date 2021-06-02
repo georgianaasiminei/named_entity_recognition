@@ -1,0 +1,12 @@
+set(arithmetic).
+assign(domain_size, 5).
+assign(max_models, -1).
+list(distinct).
+['Naomi', 'Lewis', 'Justin', 'Alvin', 'Eleanor', 'Terry', 'Brenda', 'Whitney'].
+['Vampire', 'Wizard', 'Jelly', 'Magician', 'Lollipop', 'Bubble', 'Pirate'].
+['Black', 'Blue', 'Green', 'White'].
+['the 8 years', '9-year-old', '6-year-old'].
+['third', 'fifth'].
+['Whitney'].
+['Taffy'].
+end_of_list.

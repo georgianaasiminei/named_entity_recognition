@@ -1,0 +1,14 @@
+set(arithmetic).
+assign(domain_size, 5).
+assign(max_models, -1).
+list(distinct).
+['Germs', 'Brittany', 'Heights', 'Sharon', 'Tracy', 'Arachnophobia', 'Christine'].
+['Waitress', 'Teacher', 'Ophidiophobia', 'Hairdresser', 'Actress'].
+['Purple', 'Blue', 'Red', 'Pink'].
+['2:00 PM', '4:00 PM', '6:00 PM', '5:00 PM'].
+['45-year-old', '40-year-old', '30-year-old'].
+['third'].
+['one'].
+['Dogs'].
+['Hairdresser'].
+end_of_list.

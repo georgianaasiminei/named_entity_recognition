@@ -1,0 +1,15 @@
+set(arithmetic).
+assign(domain_size, 5).
+assign(max_models, -1).
+list(distinct).
+['Hailey', 'Alyssa', 'Leah', 'Sing', 'Dance'].
+['White', 'Red', 'Yo', 'Purple', 'Green'].
+['Strawberry', 'Lemon', 'Cranberry', 'Grapefruit'].
+['10-year-old', '7-year-old', '8-year-old', '9-year-old'].
+['third', 'first', 'fifth'].
+['7:10 PM', '7:20 PM', '7:30 PM'].
+['Hula'].
+['Hula'].
+['one'].
+['Magic'].
+end_of_list.
