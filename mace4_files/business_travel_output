@@ -1,0 +1,12 @@
+set(arithmetic).
+assign(domain_size, 5).
+assign(max_models, -1).
+list(distinct).
+['Sydney', 'Travis', 'Shawn', 'Joseph', 'Dustin', 'Marcus'].
+['12', '5', '17', 'one', '7'].
+['60-year-old', '45-year-old', '50-year-old', '55-year-old', '40-year-old'].
+['Black', 'Red', 'White', 'Blue'].
+['South Africa', 'Tokyo', 'Japan', 'London'].
+['19:00', '18:00', '17:00', '18:30'].
+['fifth', 'fourth'].
+end_of_list.

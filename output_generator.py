@@ -38,6 +38,7 @@ def _write_to_file(data: List[List], output_file: str):
         f.write("set(arithmetic).\nassign(domain_size, 5).\nassign(max_models, -1).\nlist(distinct).\n")
         f.writelines([f"{row}.\n" for row in data])
         f.write("end_of_list.\n")
+    print(f"Wrote to file: {output_file}\n")
 
 
 def generate_output_file(clue_title: str, clue_text: str) -> List[List]:
@@ -66,7 +67,7 @@ def generate_output_file(clue_title: str, clue_text: str) -> List[List]:
 
 
 def main():
-    clues_list = get_puzzles_in_interval(41, 50)
+    clues_list = get_puzzles_in_interval(11, 11)
     for title, clue_text in clues_list:
         generate_output_file(title, clue_text)
 

@@ -1,3 +1,4 @@
+import re
 from typing import List, Tuple, Any
 
 import spacy
@@ -33,7 +34,7 @@ def create_testing_set_for_a_puzzle(text: str) -> Tuple[Any, List[Tuple]]:
     return doc, result
 
 
-def create_testing_data_file(clues_list: List[str]):
+def create_testing_data_file(clues_list: List[str], file_name: str):
     docs = []
     TESTING_DATA = []
     for clue in clues_list:
@@ -43,8 +44,16 @@ def create_testing_data_file(clues_list: List[str]):
             TESTING_DATA.append(ner_clue)
 
     print(len(TESTING_DATA))
+    save_data(f"testing_data/{file_name}", TESTING_DATA)
     pretty_print_ner(docs)
-    save_data("testing_data/puzzles_from_40_to_50.json", TESTING_DATA)
+    # save_data("testing_data/puzzles_from_40_to_50.json", TESTING_DATA)
+
+
+def get_entity_coordinates(entity_text, clue_text: str) -> List[Tuple]:
+    """Returns the start and end indexes of all the occurrences of a substring in a string"""
+    entitity_coordinates_matches = re.finditer(entity_text, clue_text)
+    entitity_coordinates = [(match.start(), match.end()) for match in entitity_coordinates_matches]
+    return entitity_coordinates
 
 
 def main():
@@ -58,9 +67,9 @@ def main():
     # res = extract_entities_from_clues(clue)
     # print(res)
 
-    # create_testing_data_file(clues_list)
-    clues_list = get_testing_puzzles(ids=[11, 13, 17, 19, 27, 33, 36, 42, 47, 51, 55])
+    clues_list = get_testing_puzzles(ids=[11, 13, 17, 19, 27, 33, 36, 42, 47, 51, 55, 58, 61, 64, 69])
     print(clues_list)
+    create_testing_data_file(clues_list, "brainzilla_testing_puzzles_15.json")
 
 
 if __name__ == '__main__':

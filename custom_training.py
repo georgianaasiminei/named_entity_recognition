@@ -34,9 +34,6 @@ def generate_rules():
     products_patterns = _build_patterns_list("entity_rules/products.json", "PRODUCT")
     ruler.add_patterns(products_patterns)
 
-    woa_patterns = _build_patterns_list("entity_rules/work_of_arts.json", "WORK_OF_ART")
-    ruler.add_patterns(woa_patterns)
-
     animals_patterns = _build_patterns_list("entity_rules/animals.json", "ANIMAL")
     ruler.add_patterns(animals_patterns)
 
@@ -118,10 +115,14 @@ def pretty_print_ner(doc: str):
                  "GPE", "LANGUAGE", "LAW", "LOC", "MONEY", "NORP", "ORDINAL", "ORG", "PERCENT", "PERSON", "PRODUCT",
                  "QUANTITY", "TIME", "WORK_OF_ART"],
         "colors": colors}
-    displacy.serve(doc,
-                   style="ent",
-                   port=5001,
-                   options=options)
+    try:
+        displacy.serve(doc,
+                       style="ent",
+                       host="localhost",
+                       port=5001,
+                       options=options)
+    except Exception as e:
+        print(e)
 
 
 def train_spacy(nlp, data, iterations):
@@ -195,7 +196,7 @@ def main():
     # update_trained_model_with_new_rules()
 
     # Test the model
-    test = get_puzzle(69)
+    test = get_puzzle(13)
     print(test)
     test_model(test, "ner_first_10_puzzles_model")
 
