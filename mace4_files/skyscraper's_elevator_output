@@ -5,7 +5,7 @@ list(distinct).
 ['third', '20th', 'fourth', 'second', '30th', '10th', '50th', 'fifth'].
 ['Thomas', 'Kenneth', 'Gary', 'Brian', 'Juan'].
 ['31', '46', 'one', '23', '19'].
+['40-year-old', '45-year-old', '50-year-old', '80,000 per year'].
 ['Purple', 'Red', 'Black', 'Blue'].
-['40-year-old', '45-year-old', '50-year-old'].
 ['80,000', '90,000', '70,000'].
 end_of_list.

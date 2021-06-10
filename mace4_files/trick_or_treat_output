@@ -2,11 +2,12 @@ set(arithmetic).
 assign(domain_size, 5).
 assign(max_models, -1).
 list(distinct).
-['Naomi', 'Lewis', 'Justin', 'Alvin', 'Eleanor', 'Terry', 'Brenda', 'Whitney'].
-['Vampire', 'Wizard', 'Jelly', 'Magician', 'Lollipop', 'Bubble', 'Pirate'].
-['Black', 'Blue', 'Green', 'White'].
-['the 8 years', '9-year-old', '6-year-old'].
+['Wizard', 'Naomi', 'Lewis', 'Justin', 'Alvin', 'Eleanor', 'Terry', 'Brenda', 'Whitney'].
+['Black', 'Blue', 'Green', 'White', 'Whitney'].
+['Jelly', 'Bubble', 'Naomi', 'Taffy'].
+['Vampire', 'Magician', 'Pirate'].
+['the 8 years boy', '9-year-old', '6-year-old'].
 ['third', 'fifth'].
-['Whitney'].
-['Taffy'].
+['Lollipop', 'Vampire'].
+['Wizard'].
 end_of_list.

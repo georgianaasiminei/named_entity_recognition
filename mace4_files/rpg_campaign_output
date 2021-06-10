@@ -2,12 +2,13 @@ set(arithmetic).
 assign(domain_size, 5).
 assign(max_models, -1).
 list(distinct).
-['Hammer', 'Human', 'Dragon', 'Gnome', 'Bow', 'Dwarf', 'Halfling', 'Spear'].
-['Jerieviel', 'Raolind', 'Aferidon', 'Terakoth'].
+['Hammer', 'Dragon', 'Beast', 'Fey', 'Aberration', 'Spear'].
+['Jerieviel', 'Gnome', 'Aferidon', 'Terakoth'].
+['Human', '8', 'Dwarf', 'Halfling'].
 ['14', '12', 'one', '10'].
 ['Red', 'Green', 'Blue', 'Black'].
-['Sword', 'Beast', '8'].
 ['fifth', 'first', 'fourth'].
-['Sword', 'Fey'].
-['Aberration'].
+['Sword'].
+['Raolind'].
+['Bow'].
 end_of_list.

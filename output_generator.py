@@ -67,7 +67,7 @@ def generate_output_file(clue_title: str, clue_text: str) -> List[List]:
 
 
 def main():
-    clues_list = get_puzzles_in_interval(11, 11)
+    clues_list = get_puzzles_in_interval(41, 50)
     for title, clue_text in clues_list:
         generate_output_file(title, clue_text)
 

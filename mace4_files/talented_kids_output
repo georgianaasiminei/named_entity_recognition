@@ -2,14 +2,15 @@ set(arithmetic).
 assign(domain_size, 5).
 assign(max_models, -1).
 list(distinct).
+['White', 'Red', '-', 'Hula', 'Purple', 'Green'].
 ['Hailey', 'Alyssa', 'Leah', 'Sing', 'Dance'].
-['White', 'Red', 'Yo', 'Purple', 'Green'].
 ['Strawberry', 'Lemon', 'Cranberry', 'Grapefruit'].
 ['10-year-old', '7-year-old', '8-year-old', '9-year-old'].
 ['third', 'first', 'fifth'].
-['7:10 PM', '7:20 PM', '7:30 PM'].
+['Sing', 'Mariah', 'Yo'].
+['Yo-', 'Magic', '7:30'].
 ['Hula'].
-['Hula'].
+['7:10 PM'].
 ['one'].
-['Magic'].
+['7:20 PM'].
 end_of_list.

@@ -3,13 +3,13 @@ assign(domain_size, 5).
 assign(max_models, -1).
 list(distinct).
 ['one', '21', '8', '17', '10', '5'].
-['Striker', 'Sweeper', 'Winger', 'Ronaldo', 'Midfielder'].
-['Ronaldinho', 'Mason', 'Xavier', 'Elijah', 'Dominic'].
+['Striker', 'Sweeper', 'Fullback', 'Cristiano Ronaldo', 'Ibrahimović'].
 ['Blue', 'Purple', 'Green', 'Black'].
-['Ronaldinho', 'Cristiano', 'Ibrahimović'].
+['Ronaldinho', 'Mason', 'Xavier', 'Dominic'].
+['Winger', 'Midfielder', 'Fullback'].
 ['11-year-old', '10-year-old'].
+['Neymar', 'Orange'].
 ['fifth', 'third'].
-['Fullback'].
-['Neymar'].
-['Orange'].
+['Ronaldinho'].
+['Mason'].
 end_of_list.

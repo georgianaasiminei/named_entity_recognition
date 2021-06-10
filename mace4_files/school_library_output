@@ -2,12 +2,12 @@ set(arithmetic).
 assign(domain_size, 5).
 assign(max_models, -1).
 list(distinct).
-['Art', 'Math', 'Mystery', 'Geography', 'History', 'Science'].
+['Eva', 'Art', 'Math', 'Geography', 'History', 'Science'].
 ['Blue', 'White', 'Red', 'Yellow', 'Orange'].
 ['13-year-old', '12-year-old', '11-year-old', '14-year-old', '12 years old'].
 ['100', '150', 'one', '250', '200'].
-['Avery', 'Eva', 'Mia', 'Rylee'].
-['Drama', 'Fantasy'].
-['Horror'].
+['Avery', 'Mia', 'Rylee', 'Eva'].
+['Horror', 'Drama', 'Fantasy'].
+['Mystery'].
 ['Orange'].
 end_of_list.

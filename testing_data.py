@@ -4,7 +4,7 @@ from typing import List, Tuple, Any
 import spacy
 
 from custom_training import pretty_print_ner
-from repository.puzzle_repository import get_puzzles_in_interval, get_testing_puzzles
+from repository.puzzle_repository import get_puzzles_in_interval, get_testing_puzzles, get_training_puzzles
 from utils import save_data
 
 nlp = spacy.load("ner_first_10_puzzles_model")
@@ -56,20 +56,29 @@ def get_entity_coordinates(entity_text, clue_text: str) -> List[Tuple]:
     return entitity_coordinates
 
 
+def ner_on_list(clues_list: List[str]):
+    docs = []
+    for text in clues_list:
+        doc = nlp(text)
+        docs.append(doc)
+    pretty_print_ner(docs)
+
+
 def main():
     # Generates a Train DATA file with the first 10 clues and the found entities
-    # clues_list = get_puzzles_in_interval(41, 50)
-    # for title, clue_text in clues_list:
-    #     generate_output_file(title, clue_text)
 
     # title, clue_text = clues_list[8]
 
     # res = extract_entities_from_clues(clue)
     # print(res)
 
-    clues_list = get_testing_puzzles(ids=[11, 13, 17, 19, 27, 33, 36, 42, 47, 51, 55, 58, 61, 64, 69])
-    print(clues_list)
-    create_testing_data_file(clues_list, "brainzilla_testing_puzzles_15.json")
+    testing_puzzles_ids = [11, 13, 17, 19, 27, 33, 36, 42, 47, 51, 55, 58, 61, 64, 69]
+    # clues_list = get_testing_puzzles(ids=testing_puzzles_ids)
+    clues_list = get_training_puzzles(ids=testing_puzzles_ids)
+    print(len(clues_list))
+
+    ner_on_list(clues_list)
+    # create_testing_data_file(clues_list, "brainzilla_testing_puzzles_15.json")
 
 
 if __name__ == '__main__':
