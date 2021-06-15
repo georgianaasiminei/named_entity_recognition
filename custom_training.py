@@ -228,7 +228,7 @@ def generate_testing_data_file(model):
 
 def main():
     # Comment it if you did not update the entity rules
-    update_trained_model_with_new_rules()
+    # update_trained_model_with_new_rules()
 
     # Test the model
     # test = get_puzzle(19)
@@ -238,7 +238,8 @@ def main():
     # generate_testing_data_file("models/ner_brainzilla_puzzles_model_50_lg")
 
     # docs = test_model_on_testing_list("models/ner_brainzilla_puzzles_model_50_lg")
-    # pretty_print_ner(docs)
+    docs = test_model_on_testing_list("models/ner_brainzilla_puzzles_model_30_lg")
+    pretty_print_ner(docs)
 
 
 if __name__ == '__main__':

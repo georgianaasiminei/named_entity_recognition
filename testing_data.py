@@ -10,7 +10,7 @@ from utils import save_data
 # nlp = spacy.load("ner_first_10_puzzles_model")
 
 
-def create_testing_set_for_a_puzzle(text: str) -> Tuple[Any, List[Tuple]]:
+def create_testing_set_for_a_puzzle(text: str, model: str) -> Tuple[Any, List[Tuple]]:
     """will return a data structure as in TRAIN_DATA list
     Applies NER on a text (clues of a puzzle) and returns the text and all the found entities and their positions
 
@@ -23,6 +23,7 @@ def create_testing_set_for_a_puzzle(text: str) -> Tuple[Any, List[Tuple]]:
     # nlp.add_pipe("entity_ruler", source=custom_nlp, before="ner")
     #
     # doc = nlp(text)
+    nlp = spacy.load(model)
     doc = nlp(text)
 
     entities = []
@@ -34,11 +35,11 @@ def create_testing_set_for_a_puzzle(text: str) -> Tuple[Any, List[Tuple]]:
     return doc, result
 
 
-def create_testing_data_file(clues_list: List[str], file_name: str):
+def create_testing_data_file(clues_list: List[str], file_name: str, model: str):
     docs = []
     TESTING_DATA = []
     for clue in clues_list:
-        doc, ner_clue = create_testing_set_for_a_puzzle(clue)
+        doc, ner_clue = create_testing_set_for_a_puzzle(clue, model)
         docs.append(doc)
         if ner_clue:
             TESTING_DATA.append(ner_clue)
@@ -74,14 +75,15 @@ def main():
     # print(res)
 
     testing_puzzles_ids = [11, 13, 17, 19, 27, 33, 36, 42, 47, 51, 55, 58, 61, 64, 69]
-    # clues_list = get_testing_puzzles(ids=testing_puzzles_ids)
-    clues_list = get_training_puzzles(excluded_ids=testing_puzzles_ids)
-    print(len(clues_list))
+    clues_list = get_testing_puzzles(ids=testing_puzzles_ids)
+    # clues_list = get_training_puzzles(excluded_ids=testing_puzzles_ids)
     # ner_on_list(clues_list)
 
-    # create_testing_data_file(clues_list, "brainzilla_testing_puzzles_15.json")
+    # create_testing_data_file(clues_list,
+    #                          file_name="brainzilla_testing_puzzles_15.json",
+    #                          model="models/ner_brainzilla_puzzles_model_50_lg")
 
-    print(get_entity_coordinates("30", clues_list[53]))
+    print(get_entity_coordinates("Dresser", clues_list[14]))
 
 
 if __name__ == '__main__':
