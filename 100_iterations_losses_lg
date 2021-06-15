@@ -1,0 +1,201 @@
+54
+Starting iteration 0
+{'ner': 1307.0572788028096}
+Starting iteration 1
+{'ner': 1065.3531136343847}
+Starting iteration 2
+{'ner': 803.8404194949009}
+Starting iteration 3
+{'ner': 387.0584844597984}
+Starting iteration 4
+{'ner': 428.22595627069313}
+Starting iteration 5
+{'ner': 297.4989265507538}
+Starting iteration 6
+{'ner': 401.40400473417327}
+Starting iteration 7
+{'ner': 146.4994658090512}
+Starting iteration 8
+{'ner': 121.15578402142371}
+Starting iteration 9
+{'ner': 104.50478750179101}
+Starting iteration 10
+{'ner': 251.90407694940183}
+Starting iteration 11
+{'ner': 96.52196743191406}
+Starting iteration 12
+{'ner': 64.99356878069135}
+Starting iteration 13
+{'ner': 56.96802462712443}
+Starting iteration 14
+{'ner': 41.58541248581227}
+Starting iteration 15
+{'ner': 235.0528676133326}
+Starting iteration 16
+{'ner': 42.86724846826493}
+Starting iteration 17
+{'ner': 51.76452687713154}
+Starting iteration 18
+{'ner': 36.371706013274824}
+Starting iteration 19
+{'ner': 96.33891797358308}
+Starting iteration 20
+{'ner': 34.031483233064534}
+Starting iteration 21
+{'ner': 37.16810855110076}
+Starting iteration 22
+{'ner': 28.958117898004673}
+Starting iteration 23
+{'ner': 22.23201950383553}
+Starting iteration 24
+{'ner': 31.026408628492224}
+Starting iteration 25
+{'ner': 21.11585360859177}
+Starting iteration 26
+{'ner': 24.9326277797958}
+Starting iteration 27
+{'ner': 17.01632886475791}
+Starting iteration 28
+{'ner': 13.113672247122517}
+Starting iteration 29
+{'ner': 20.866567924890045}
+Starting iteration 30
+{'ner': 25.732113481239338}
+Starting iteration 31
+{'ner': 17.062823105081957}
+Starting iteration 32
+{'ner': 20.8026353708145}
+Starting iteration 33
+{'ner': 18.209413545129262}
+Starting iteration 34
+{'ner': 16.91817300293866}
+Starting iteration 35
+{'ner': 24.532493786868727}
+Starting iteration 36
+{'ner': 18.355112010542367}
+Starting iteration 37
+{'ner': 16.88865587505927}
+Starting iteration 38
+{'ner': 17.097978540994717}
+Starting iteration 39
+{'ner': 19.023293467069056}
+Starting iteration 40
+{'ner': 17.91872584475159}
+Starting iteration 41
+{'ner': 20.56792965061291}
+Starting iteration 42
+{'ner': 17.44071479731411}
+Starting iteration 43
+{'ner': 24.104577603597495}
+Starting iteration 44
+{'ner': 18.434037465099333}
+Starting iteration 45
+{'ner': 9.679691603320714}
+Starting iteration 46
+{'ner': 8.342945818760942}
+Starting iteration 47
+{'ner': 25.480586180866833}
+Starting iteration 48
+{'ner': 32.12934355847327}
+Starting iteration 49
+{'ner': 11.69818573773917}
+Starting iteration 50
+{'ner': 12.858863430468315}
+Starting iteration 51
+{'ner': 18.723926343557167}
+Starting iteration 52
+{'ner': 14.900054719312127}
+Starting iteration 53
+{'ner': 15.924741673881401}
+Starting iteration 54
+{'ner': 11.095337763833733}
+Starting iteration 55
+{'ner': 21.251986953739227}
+Starting iteration 56
+{'ner': 22.60919734917595}
+Starting iteration 57
+{'ner': 22.852491742607896}
+Starting iteration 58
+{'ner': 16.03876231508135}
+Starting iteration 59
+{'ner': 25.645704258837625}
+Starting iteration 60
+{'ner': 12.326403041820642}
+Starting iteration 61
+{'ner': 12.862838521272721}
+Starting iteration 62
+{'ner': 13.627278481678704}
+Starting iteration 63
+{'ner': 14.763765175892274}
+Starting iteration 64
+{'ner': 15.448123319245628}
+Starting iteration 65
+{'ner': 10.009199735784858}
+Starting iteration 66
+{'ner': 14.73348198588431}
+Starting iteration 67
+{'ner': 13.486274826530812}
+Starting iteration 68
+{'ner': 13.234761422836739}
+Starting iteration 69
+{'ner': 12.643957491521203}
+Starting iteration 70
+{'ner': 12.691412264743827}
+Starting iteration 71
+{'ner': 35.18875222286351}
+Starting iteration 72
+{'ner': 11.864168194484732}
+Starting iteration 73
+{'ner': 11.782533654149844}
+Starting iteration 74
+{'ner': 18.449073226452736}
+Starting iteration 75
+{'ner': 14.602349092481852}
+Starting iteration 76
+{'ner': 11.054134816635575}
+Starting iteration 77
+{'ner': 14.583035672767414}
+Starting iteration 78
+{'ner': 15.81418588198983}
+Starting iteration 79
+{'ner': 10.733775485524099}
+Starting iteration 80
+{'ner': 15.21651520355003}
+Starting iteration 81
+{'ner': 13.785305712500174}
+Starting iteration 82
+{'ner': 10.554537915109073}
+Starting iteration 83
+{'ner': 18.062012490608907}
+Starting iteration 84
+{'ner': 6.9842647426774604}
+Starting iteration 85
+{'ner': 19.48488974162171}
+Starting iteration 86
+{'ner': 25.058021985833967}
+Starting iteration 87
+{'ner': 21.267157013369992}
+Starting iteration 88
+{'ner': 11.837429880953446}
+Starting iteration 89
+{'ner': 9.704924559974545}
+Starting iteration 90
+{'ner': 27.14902257086693}
+Starting iteration 91
+{'ner': 13.967775193940312}
+Starting iteration 92
+{'ner': 7.736610548562602}
+Starting iteration 93
+{'ner': 14.298556984835693}
+Starting iteration 94
+{'ner': 6.905281878444652}
+Starting iteration 95
+{'ner': 9.118371099146716}
+Starting iteration 96
+{'ner': 15.52387147542529}
+Starting iteration 97
+{'ner': 17.33525950197794}
+Starting iteration 98
+{'ner': 16.334573070799586}
+Starting iteration 99
+{'ner': 9.715474300939622}

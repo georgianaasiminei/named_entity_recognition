@@ -2,14 +2,13 @@ set(arithmetic).
 assign(domain_size, 5).
 assign(max_models, -1).
 list(distinct).
-['Literature', 'Book', 'Art', 'Chemistry', 'Mathematics', 'History', 'Band'].
+['Police officer', 'Judge,', 'Nutritionist', 'Judge', 'Bartender', 'Surgeon'].
 ['July', 'March', 'May', 'January', 'September'].
-['Police', 'Nutritionist', 'Bartender', 'Surgeon'].
+['Literature', 'Art', 'Chemistry', 'Mathematics', 'History'].
+['Mountain', 'Band', 'Marathon', 'Book', 'Charity'].
 ['Audrey', 'Kelsey', 'Shirley', 'Michelle'].
 ['Red', 'Blue', 'Green', 'White'].
-['Mountain', 'Band', 'Marathon', 'Charity'].
 ['second', 'fifth'].
 ['Independence Day'].
 ['one'].
-['Marathon'].
 end_of_list.

@@ -23,10 +23,6 @@
   "Tennis",
   "Horse riding",
   "Ten-pin bowlings",
-  "Boat",
-  "Bike",
-  "Computer",
-  "Jewelry",
   "Painting",
   "Reading",
   "Drawing",
@@ -95,5 +91,8 @@
   "Basketball",
   "Bowling",
   "Swimming",
-  "Handball"
+  "Handball",
+  "Mountain",
+  "R&D",
+  "Write"
 ]

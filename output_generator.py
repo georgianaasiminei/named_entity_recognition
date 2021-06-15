@@ -6,7 +6,7 @@ import spacy
 
 from repository.puzzle_repository import get_puzzles_in_interval
 
-nlp = spacy.load("ner_first_10_puzzles_model")
+nlp = spacy.load("ner_brainzilla_puzzles_model")
 
 
 def extract_entities_from_clues(clue_text: str) -> dict:

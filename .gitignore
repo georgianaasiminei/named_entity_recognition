@@ -2,3 +2,7 @@ venv/*
 .idea/*
 **/__pycache__/*
 **/*.pyc
+
+
+# models
+models/ner_brainzilla_puzzles_model*

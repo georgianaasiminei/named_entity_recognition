@@ -29,10 +29,10 @@ def get_testing_puzzles(ids: List[int]) -> List[str]:
     return clues
 
 
-def get_training_puzzles(ids: List[int]) -> List[str]:
+def get_training_puzzles(excluded_ids: List[int]) -> List[str]:
     """Returns the clues of the puzzles having the id in the given ids list"""
     all_puzzles = Puzzle.select()
     puzzles_dict = {puzzle.id: puzzle.clues for puzzle in all_puzzles}
-    clues = [clue for id_, clue in puzzles_dict.items() if id_ not in ids and id_ > 11]
+    clues = [clue for id_, clue in puzzles_dict.items() if id_ not in excluded_ids and id_ < 70]
     return clues
 

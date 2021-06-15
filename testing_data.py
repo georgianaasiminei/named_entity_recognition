@@ -7,7 +7,7 @@ from custom_training import pretty_print_ner
 from repository.puzzle_repository import get_puzzles_in_interval, get_testing_puzzles, get_training_puzzles
 from utils import save_data
 
-nlp = spacy.load("ner_first_10_puzzles_model")
+# nlp = spacy.load("ner_first_10_puzzles_model")
 
 
 def create_testing_set_for_a_puzzle(text: str) -> Tuple[Any, List[Tuple]]:
@@ -49,14 +49,15 @@ def create_testing_data_file(clues_list: List[str], file_name: str):
     # save_data("testing_data/puzzles_from_40_to_50.json", TESTING_DATA)
 
 
-def get_entity_coordinates(entity_text, clue_text: str) -> List[Tuple]:
+def get_entity_coordinates(entity_text: str, clue_text: str) -> Tuple[str, List[Tuple]]:
     """Returns the start and end indexes of all the occurrences of a substring in a string"""
     entitity_coordinates_matches = re.finditer(entity_text, clue_text)
     entitity_coordinates = [(match.start(), match.end()) for match in entitity_coordinates_matches]
-    return entitity_coordinates
+    return entity_text, entitity_coordinates
 
 
 def ner_on_list(clues_list: List[str]):
+    nlp = spacy.load("models/ner_brainzilla_puzzles_model_50_lg")
     docs = []
     for text in clues_list:
         doc = nlp(text)
@@ -74,11 +75,13 @@ def main():
 
     testing_puzzles_ids = [11, 13, 17, 19, 27, 33, 36, 42, 47, 51, 55, 58, 61, 64, 69]
     # clues_list = get_testing_puzzles(ids=testing_puzzles_ids)
-    clues_list = get_training_puzzles(ids=testing_puzzles_ids)
+    clues_list = get_training_puzzles(excluded_ids=testing_puzzles_ids)
     print(len(clues_list))
+    # ner_on_list(clues_list)
 
-    ner_on_list(clues_list)
     # create_testing_data_file(clues_list, "brainzilla_testing_puzzles_15.json")
+
+    print(get_entity_coordinates("30", clues_list[53]))
 
 
 if __name__ == '__main__':
