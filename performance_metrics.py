@@ -10,11 +10,11 @@ import numpy
 from utils import load_data
 
 # Load the custom model
-# nlp = spacy.load("ner_first_10_puzzles_model")
-nlp = spacy.load("en_core_web_sm")
+nlp = spacy.load("models/ner_brainzilla_puzzles_model_50_lg")
+# nlp = spacy.load("en_core_web_sm")
 
 # Load the testing data
-docs = load_data("training_data/first_10_puzzles.json")
+docs = load_data("testing_data/brainzilla_testing_puzzles_15_adnotated.json")
 
 
 def get_cleaned_label(label: str):
@@ -29,7 +29,7 @@ def get_cleaned_label(label: str):
 def create_total_target_vector(processed_entities: List[str], given_label: str) -> List[str]:
     target_vector = []
     for clue_entities in processed_entities:
-        print(clue_entities)
+        # print(clue_entities)
         clue_text = nlp.make_doc(clue_entities[0])
         # entities = clue_entities[1]["entities"]
         entities = [x for x in clue_entities[1]["entities"] if x[2] == given_label]
@@ -132,8 +132,12 @@ def main():
     # print(sorted(set(create_total_target_vector(docs, "PERSON"))))
     # generate_confusion_matrix(docs)
     # plot_confusion_matrix(docs, given_label='PERSON', normalize=False)
-    plot_confusion_matrix(docs, given_label='COLOR', normalize=False)
+    # plot_confusion_matrix(docs, given_label='COLOR', normalize=False)
     generate_metrics(docs, given_label="PERSON")
+    generate_metrics(docs, given_label="COLOR")
+    generate_metrics(docs, given_label="HOBBY")
+    generate_metrics(docs, given_label="PROFESSION")
+    generate_metrics(docs, given_label="CATEGORY")
     # (0.54, 0.4426229508196721, 0.48648648648648646)  - EN model
     # (1.0, 1.0, 1.0)  - Custom
 

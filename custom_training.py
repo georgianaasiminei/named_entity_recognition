@@ -22,6 +22,7 @@ def _build_patterns_list(file: str, type_: str) -> List[dict]:
 
 def generate_rules():
     nlp = English()
+
     # add a pipe with rules based NER
     ruler = nlp.add_pipe("entity_ruler")
 
@@ -171,7 +172,7 @@ def update_trained_model_with_new_rules():
     # RUN THIS if you've updated the ANNOTATED data (entity_rules/*.json)
     # This will create a new model called `puzzle_ner` and will save it to disk
     # Then we will create an enhanced nlp pipe from the original one by adding the custom rules
-    generate_rules()
+    # generate_rules()
     untrained_custom_nlp = spacy.load("models/puzzle_ner")
     # untrained_nlp = spacy.load("en_core_web_sm")
     untrained_nlp = spacy.load("en_core_web_lg")
@@ -231,15 +232,16 @@ def main():
     # update_trained_model_with_new_rules()
 
     # Test the model
-    # test = get_puzzle(19)
+    test = get_puzzle(41)
+    test_model(test, "models/ner_brainzilla_puzzles_model_50_lg")
     # print(test)
 
     # Generate a starting file for the testing data to be corrected manually
     # generate_testing_data_file("models/ner_brainzilla_puzzles_model_50_lg")
 
     # docs = test_model_on_testing_list("models/ner_brainzilla_puzzles_model_50_lg")
-    docs = test_model_on_testing_list("models/ner_brainzilla_puzzles_model_30_lg")
-    pretty_print_ner(docs)
+    # docs = test_model_on_testing_list("models/ner_brainzilla_puzzles_model_30_lg")
+    # pretty_print_ner(docs)
 
 
 if __name__ == '__main__':

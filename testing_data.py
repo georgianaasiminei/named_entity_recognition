@@ -75,15 +75,16 @@ def main():
     # print(res)
 
     testing_puzzles_ids = [11, 13, 17, 19, 27, 33, 36, 42, 47, 51, 55, 58, 61, 64, 69]
-    clues_list = get_testing_puzzles(ids=testing_puzzles_ids)
-    # clues_list = get_training_puzzles(excluded_ids=testing_puzzles_ids)
+    # clues_list = get_testing_puzzles(ids=testing_puzzles_ids)
+    clues_list = get_training_puzzles(excluded_ids=testing_puzzles_ids)
+    print(len(clues_list))
     # ner_on_list(clues_list)
 
     # create_testing_data_file(clues_list,
     #                          file_name="brainzilla_testing_puzzles_15.json",
     #                          model="models/ner_brainzilla_puzzles_model_50_lg")
 
-    print(get_entity_coordinates("Dresser", clues_list[14]))
+    # print(get_entity_coordinates("Dresser", clues_list[14]))
 
 
 if __name__ == '__main__':
