@@ -4,9 +4,9 @@ from typing import List
 
 import spacy
 
-from repository.puzzle_repository import get_puzzles_in_interval
+from repository.puzzle_repository import get_puzzles_in_interval, get_puzzle_with_title
 
-nlp = spacy.load("ner_brainzilla_puzzles_model")
+nlp = spacy.load("models/ner_brainzilla_puzzles_model_50_lg_final")
 
 
 def extract_entities_from_clues(clue_text: str) -> dict:
@@ -45,7 +45,9 @@ def generate_output_file(clue_title: str, clue_text: str) -> List[List]:
     """Generates an output file for the mace4 input."""
     entities = extract_entities_from_clues(clue_text)
     pprint(dict(entities))
-    result = [list(ent_text.keys()) for _, ent_text in entities.items()]
+    result = [list(filter(lambda x: x != "one", ent_text.keys()))  # eliminate `one` as NE
+              for ent_label, ent_text in entities.items()
+              if ent_label != "ORDINAL"]  # eliminate ordinals as NE
 
 
     # Optional - can be deleted
@@ -67,9 +69,12 @@ def generate_output_file(clue_title: str, clue_text: str) -> List[List]:
 
 
 def main():
-    clues_list = get_puzzles_in_interval(41, 50)
-    for title, clue_text in clues_list:
-        generate_output_file(title, clue_text)
+    # clues_list = get_puzzles_in_interval(41, 50)
+    # for title, clue_text in clues_list:
+    #     generate_output_file(title, clue_text)
+
+    puzzle_title, puzzle_clues = get_puzzle_with_title(11)
+    generate_output_file(clue_title=puzzle_title, clue_text=puzzle_clues)
 
     # title, clue_text = clues_list[8]
     # generate_output_file(title, clue_text)

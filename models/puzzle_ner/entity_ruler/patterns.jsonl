@@ -292,6 +292,55 @@
 {"label":"PRODUCT","pattern":"Margarita"}
 {"label":"PRODUCT","pattern":"Daiquiri"}
 {"label":"PRODUCT","pattern":"Manhattan"}
+{"label":"PRODUCT","pattern":"Taffy"}
+{"label":"PRODUCT","pattern":"Airbag"}
+{"label":"PRODUCT","pattern":"Engine"}
+{"label":"PRODUCT","pattern":"Radiator"}
+{"label":"PRODUCT","pattern":"Transmission"}
+{"label":"PRODUCT","pattern":"Suspension"}
+{"label":"PRODUCT","pattern":"Word globe"}
+{"label":"PRODUCT","pattern":"Jar"}
+{"label":"PRODUCT","pattern":"Lamp"}
+{"label":"PRODUCT","pattern":"Brass letter"}
+{"label":"PRODUCT","pattern":"Frisbee"}
+{"label":"PRODUCT","pattern":"Ball"}
+{"label":"PRODUCT","pattern":"Bone"}
+{"label":"PRODUCT","pattern":"Stick"}
+{"label":"PRODUCT","pattern":"Hammer"}
+{"label":"PRODUCT","pattern":"Wrench"}
+{"label":"PRODUCT","pattern":"Screwdriver"}
+{"label":"PRODUCT","pattern":"Drill"}
+{"label":"PRODUCT","pattern":"Saw"}
+{"label":"PRODUCT","pattern":"Landscape"}
+{"label":"PRODUCT","pattern":"Flower"}
+{"label":"PRODUCT","pattern":"Sword"}
+{"label":"PRODUCT","pattern":"Bow"}
+{"label":"PRODUCT","pattern":"Band"}
+{"label":"PRODUCT","pattern":"Marathon"}
+{"label":"PRODUCT","pattern":"Book"}
+{"label":"PRODUCT","pattern":"Charity"}
+{"label":"PRODUCT","pattern":"Mug"}
+{"label":"PRODUCT","pattern":"Notepad"}
+{"label":"PRODUCT","pattern":"Computer"}
+{"label":"PRODUCT","pattern":"TV"}
+{"label":"PRODUCT","pattern":"Smartphone"}
+{"label":"PRODUCT","pattern":"Beard trimmer"}
+{"label":"PRODUCT","pattern":"Game console"}
+{"label":"PRODUCT","pattern":"Website"}
+{"label":"PRODUCT","pattern":"Magazine"}
+{"label":"PRODUCT","pattern":"Coat"}
+{"label":"PRODUCT","pattern":"Blazer"}
+{"label":"PRODUCT","pattern":"Skirt"}
+{"label":"PRODUCT","pattern":"Dress"}
+{"label":"PRODUCT","pattern":"Sweater"}
+{"label":"PRODUCT","pattern":"Umbrella"}
+{"label":"PRODUCT","pattern":"Clock"}
+{"label":"PRODUCT","pattern":"Phone"}
+{"label":"PRODUCT","pattern":"Ring"}
+{"label":"PRODUCT","pattern":"Boat"}
+{"label":"PRODUCT","pattern":"Bike"}
+{"label":"PRODUCT","pattern":"Jewelry"}
+{"label":"PRODUCT","pattern":"Tie"}
 {"label":"ANIMAL","pattern":"Dog"}
 {"label":"ANIMAL","pattern":"Dogs"}
 {"label":"ANIMAL","pattern":"Bird"}
@@ -536,6 +585,8 @@
 {"label":"HOBBY","pattern":"Swimming"}
 {"label":"HOBBY","pattern":"Handball"}
 {"label":"HOBBY","pattern":"Mountain"}
+{"label":"HOBBY","pattern":"R&D"}
+{"label":"HOBBY","pattern":"Write"}
 {"label":"CATEGORY","pattern":"Horror"}
 {"label":"CATEGORY","pattern":"Comedy"}
 {"label":"CATEGORY","pattern":"Thriller"}
@@ -585,11 +636,6 @@
 {"label":"CATEGORY","pattern":"Margarita"}
 {"label":"CATEGORY","pattern":"BBQ Chicken"}
 {"label":"CATEGORY","pattern":"Vegetarian"}
-{"label":"CATEGORY","pattern":"SPF 40"}
-{"label":"CATEGORY","pattern":"SPF 25"}
-{"label":"CATEGORY","pattern":"SPF 35"}
-{"label":"CATEGORY","pattern":"SPF 30"}
-{"label":"CATEGORY","pattern":"SPF 20"}
 {"label":"CATEGORY","pattern":"Striker"}
 {"label":"CATEGORY","pattern":"Sweeper"}
 {"label":"CATEGORY","pattern":"Fullback"}
@@ -602,9 +648,9 @@
 {"label":"CATEGORY","pattern":"Electronic"}
 {"label":"CATEGORY","pattern":"Aerospace"}
 {"label":"CATEGORY","pattern":"Exhibition"}
+{"label":"CATEGORY","pattern":"civil"}
 {"label":"CATEGORY","pattern":"Friend"}
 {"label":"CATEGORY","pattern":"Runner"}
-{"label":"CATEGORY","pattern":"Hall"}
 {"label":"CATEGORY","pattern":"Round"}
 {"label":"CATEGORY","pattern":"Oval"}
 {"label":"CATEGORY","pattern":"Stars"}
@@ -625,59 +671,14 @@
 {"label":"CATEGORY","pattern":"Pearl"}
 {"label":"CATEGORY","pattern":"Turquoise"}
 {"label":"CATEGORY","pattern":"Sapphire"}
-{"label":"OBJECT","pattern":"Airbag"}
-{"label":"OBJECT","pattern":"Engine"}
-{"label":"OBJECT","pattern":"Radiator"}
-{"label":"OBJECT","pattern":"Transmission"}
-{"label":"OBJECT","pattern":"Suspension"}
-{"label":"OBJECT","pattern":"Word globe"}
-{"label":"OBJECT","pattern":"Jar"}
-{"label":"OBJECT","pattern":"Lamp"}
-{"label":"OBJECT","pattern":"Brass letter"}
-{"label":"OBJECT","pattern":"Frisbee"}
-{"label":"OBJECT","pattern":"Ball"}
-{"label":"OBJECT","pattern":"Bone"}
-{"label":"OBJECT","pattern":"Stick"}
-{"label":"OBJECT","pattern":"Hammer"}
-{"label":"OBJECT","pattern":"Wrench"}
-{"label":"OBJECT","pattern":"Screwdriver"}
-{"label":"OBJECT","pattern":"Drill"}
-{"label":"OBJECT","pattern":"Saw"}
-{"label":"OBJECT","pattern":"Landscape"}
-{"label":"OBJECT","pattern":"Flower"}
-{"label":"OBJECT","pattern":"Sword"}
-{"label":"OBJECT","pattern":"Bow"}
-{"label":"OBJECT","pattern":"Band"}
-{"label":"OBJECT","pattern":"Marathon"}
-{"label":"OBJECT","pattern":"Book"}
-{"label":"OBJECT","pattern":"Charity"}
-{"label":"OBJECT","pattern":"Mug"}
-{"label":"OBJECT","pattern":"Notepad"}
-{"label":"OBJECT","pattern":"Computer"}
-{"label":"OBJECT","pattern":"TV"}
-{"label":"OBJECT","pattern":"Smartphone"}
-{"label":"OBJECT","pattern":"Beard trimmer"}
-{"label":"OBJECT","pattern":"Game console"}
-{"label":"OBJECT","pattern":"Website"}
-{"label":"OBJECT","pattern":"Magazine"}
-{"label":"OBJECT","pattern":"Coat"}
-{"label":"OBJECT","pattern":"Blazer"}
-{"label":"OBJECT","pattern":"Skirt"}
-{"label":"OBJECT","pattern":"Dress"}
-{"label":"OBJECT","pattern":"Sweater"}
-{"label":"OBJECT","pattern":"Umbrella"}
-{"label":"OBJECT","pattern":"Clock"}
-{"label":"OBJECT","pattern":"Phone"}
-{"label":"OBJECT","pattern":"Ring"}
-{"label":"OBJECT","pattern":"Library"}
-{"label":"OBJECT","pattern":"Office"}
-{"label":"OBJECT","pattern":"Kitchen"}
-{"label":"OBJECT","pattern":"Bedroom"}
-{"label":"OBJECT","pattern":"Bathroom"}
-{"label":"OBJECT","pattern":"Living room"}
-{"label":"OBJECT","pattern":"Boat"}
-{"label":"OBJECT","pattern":"Bike"}
-{"label":"OBJECT","pattern":"Jewelry"}
+{"label":"CATEGORY","pattern":"Arachnophobia"}
+{"label":"LOC","pattern":"Library"}
+{"label":"LOC","pattern":"Office"}
+{"label":"LOC","pattern":"Kitchen"}
+{"label":"LOC","pattern":"Bedroom"}
+{"label":"LOC","pattern":"Bathroom"}
+{"label":"LOC","pattern":"Living room"}
+{"label":"LOC","pattern":"Hall"}
 {"label":"DATE","pattern":"30s"}
 {"label":"DATE","pattern":"50s"}
 {"label":"DATE","pattern":"Valentine's Day"}
@@ -784,6 +785,11 @@
 {"label":"QUANTITY","pattern":"250 g"}
 {"label":"QUANTITY","pattern":"150 g"}
 {"label":"QUANTITY","pattern":"200 g"}
+{"label":"QUANTITY","pattern":"SPF 40"}
+{"label":"QUANTITY","pattern":"SPF 25"}
+{"label":"QUANTITY","pattern":"SPF 35"}
+{"label":"QUANTITY","pattern":"SPF 30"}
+{"label":"QUANTITY","pattern":"SPF 20"}
 {"label":"WORK_OF_ART","pattern":"Raphael"}
 {"label":"WORK_OF_ART","pattern":"Botticelli"}
 {"label":"WORK_OF_ART","pattern":"Da Vinci"}

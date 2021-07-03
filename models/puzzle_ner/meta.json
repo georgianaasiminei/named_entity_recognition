@@ -17,23 +17,23 @@
   },
   "labels":{
     "entity_ruler":[
-      "NORP",
-      "PROFESSION",
-      "PERSON",
-      "FRUIT",
+      "TIME",
       "CARDINAL",
-      "PRODUCT",
-      "COLOR",
-      "ANIMAL",
-      "HOBBY",
-      "ORG",
       "GPE",
+      "COLOR",
+      "PROFESSION",
+      "WORK_OF_ART",
+      "NORP",
+      "PERSON",
+      "PRODUCT",
+      "FRUIT",
       "CATEGORY",
       "DATE",
-      "WORK_OF_ART",
-      "QUANTITY",
-      "TIME",
-      "OBJECT"
+      "LOC",
+      "HOBBY",
+      "ANIMAL",
+      "ORG",
+      "QUANTITY"
     ]
   },
   "pipeline":[

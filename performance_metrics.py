@@ -41,8 +41,27 @@ def create_total_target_vector(processed_entities: List[str], given_label: str) 
     return target_vector
 
 
+def create_total_target_vector_overall(processed_entities: List[str]) -> List[str]:
+    target_vector = []
+    for clue_entities in processed_entities:
+        # print(clue_entities)
+        clue_text = nlp.make_doc(clue_entities[0])
+        # entities = clue_entities[1]["entities"]
+        entities = [x for x in clue_entities[1]["entities"]]
+        bilou_entities = offsets_to_biluo_tags(clue_text, entities)
+        result = []
+        for item in bilou_entities:
+            result.append(get_cleaned_label(item))
+        target_vector.extend(result)
+    return target_vector
+
+
 def create_prediction_vector(text, given_label):
     return [get_cleaned_label(prediction) for prediction in get_all_ner_predictions(text, given_label)]
+
+
+def create_prediction_vector_overall(text):
+    return [get_cleaned_label(prediction) for prediction in get_all_ner_predictions_overall(text)]
 
 
 def create_total_prediction_vector(docs: list, given_label: str):
@@ -52,9 +71,24 @@ def create_total_prediction_vector(docs: list, given_label: str):
     return prediction_vector
 
 
+def create_total_prediction_vector_overall(docs: list):
+    prediction_vector = []
+    for doc in docs:
+        prediction_vector.extend(create_prediction_vector_overall(doc[0]))
+    return prediction_vector
+
+
 def get_all_ner_predictions(text, given_label):
     doc = nlp(text)
     entities = [(e.start_char, e.end_char, e.label_) for e in doc.ents if e.label_ == given_label]
+    bilou_entities = offsets_to_biluo_tags(doc, entities)
+    return bilou_entities
+
+
+
+def get_all_ner_predictions_overall(text):
+    doc = nlp(text)
+    entities = [(e.start_char, e.end_char, e.label_) for e in doc.ents]
     bilou_entities = offsets_to_biluo_tags(doc, entities)
     return bilou_entities
 
@@ -68,8 +102,8 @@ def generate_confusion_matrix(processed_entities: List[str], given_label: str):
     classes = sorted(set(create_total_target_vector(processed_entities, given_label)))
     y_true = create_total_target_vector(processed_entities, given_label)
     y_pred = create_total_prediction_vector(processed_entities, given_label)
-    print(y_true)
-    print(y_pred)
+    # print(y_true)
+    # print(y_pred)
     return confusion_matrix(y_true, y_pred, classes)
 
 
@@ -80,9 +114,13 @@ def generate_metrics(processed_entities: List[str], given_label: str) -> Tuple[f
     recall = recall_score(y_true, y_pred, average='binary', pos_label=given_label)
     score = f1_score(y_true, y_pred, average='binary', pos_label=given_label)
 
+    print(y_true)
+    print(y_pred)
+
+    print("LABEL: ", given_label)
     print('Precision: %.3f\n' % precision +
           'Recall: %.3f\n' % recall +
-          'F-Measure: %.3f\n' % score)
+          'F1 Score: %.3f\n' % score)
     return precision, recall, score
 
 
@@ -127,17 +165,65 @@ def plot_confusion_matrix(docs, given_label: str, normalize=False, cmap=pyplot.c
     return cm, ax, pyplot
 
 
+def generate_metrics_overall(processed_entities: List[str]) -> Tuple[float, float, float]:
+    y_true = create_total_target_vector_overall(processed_entities)
+    y_pred = create_total_prediction_vector_overall(processed_entities)
+    precision = precision_score(y_true, y_pred, average=None)
+    recall = recall_score(y_true, y_pred, average=None)
+    score = f1_score(y_true, y_pred, average=None)
+
+    print(y_true)
+    print(y_pred)
+
+    print('Precision: %.3f\n' % precision +
+          'Recall: %.3f\n' % recall +
+          'F1 Score: %.3f\n' % score)
+    return precision, recall, score
+
+
 def main():
-    # print(docs[0])
+    # print(docs[0][0])
     # print(sorted(set(create_total_target_vector(docs, "PERSON"))))
     # generate_confusion_matrix(docs)
     # plot_confusion_matrix(docs, given_label='PERSON', normalize=False)
     # plot_confusion_matrix(docs, given_label='COLOR', normalize=False)
-    generate_metrics(docs, given_label="PERSON")
-    generate_metrics(docs, given_label="COLOR")
-    generate_metrics(docs, given_label="HOBBY")
-    generate_metrics(docs, given_label="PROFESSION")
-    generate_metrics(docs, given_label="CATEGORY")
+    #
+    entities = ['CARDINAL', 'GPE', 'COLOR', 'DATE', 'PERSON', 'TIME', 'PROFESSION', 'HOBBY', 'CATEGORY', 'PRODUCT'
+    'NORP', 'ANIMAL', 'QUANTITY', 'FRUIT', 'WORK_OF_ART']
+
+    precision = []
+    recall = []
+    score = []
+    for e in entities:
+        prec, rec, sc = generate_metrics(docs, given_label=e)
+        precision.append(prec)
+        recall.append(rec)
+        score.append(sc)
+    mean_precision = numpy.mean(precision)
+    mean_recall = numpy.mean(recall)
+    mean_score = numpy.mean(score)
+
+    print(f"Mean Precision: {mean_precision}")
+    print(f"Mean Recall: {mean_recall}")
+    print(f"Mean Score: {mean_score}")
+    # generate_metrics(docs, given_label="CARDINAL")
+    # generate_metrics(docs, given_label="CATEGORY")
+    # generate_metrics(docs, given_label="COLOR")
+    # generate_metrics(docs, given_label="DATE")
+    # generate_metrics(docs, given_label="FRUIT")
+    # generate_metrics(docs, given_label="GPE")
+    # generate_metrics(docs, given_label="HOBBY")
+    # # generate_metrics(docs, given_label="LOC")
+    # generate_metrics(docs, given_label="NORP")
+    # # generate_metrics(docs, given_label="ORG")
+    # generate_metrics(docs, given_label="PERSON")
+    # generate_metrics(docs, given_label="PRODUCT")
+    # generate_metrics(docs, given_label="PROFESSION")
+    # generate_metrics(docs, given_label="QUANTITY")
+    # generate_metrics(docs, given_label="TIME")
+    # generate_metrics(docs, given_label="WORK_OF_ART")
+
+
     # (0.54, 0.4426229508196721, 0.48648648648648646)  - EN model
     # (1.0, 1.0, 1.0)  - Custom
 

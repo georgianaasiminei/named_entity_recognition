@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Tuple
 
 from repository.models import Puzzle
 
@@ -9,6 +9,14 @@ def get_puzzle(uid: int) -> str:
     if not result:
         raise Exception(f"There is no puzzle with ID {uid}")
     return result.clues
+
+
+def get_puzzle_with_title(uid: int) -> Tuple[str, str]:
+    """Return the clues for a given Puzzle ID"""
+    puzzle = Puzzle.get(Puzzle.id == uid)
+    if not puzzle:
+        raise Exception(f"There is no puzzle with ID {uid}")
+    return puzzle.title, puzzle.clues
 
 
 def get_puzzles_in_interval(from_uid: int, to_uid: int) -> List:

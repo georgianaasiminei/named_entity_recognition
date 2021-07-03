@@ -172,7 +172,7 @@ def update_trained_model_with_new_rules():
     # RUN THIS if you've updated the ANNOTATED data (entity_rules/*.json)
     # This will create a new model called `puzzle_ner` and will save it to disk
     # Then we will create an enhanced nlp pipe from the original one by adding the custom rules
-    # generate_rules()
+    generate_rules()
     untrained_custom_nlp = spacy.load("models/puzzle_ner")
     # untrained_nlp = spacy.load("en_core_web_sm")
     untrained_nlp = spacy.load("en_core_web_lg")
@@ -195,7 +195,7 @@ def update_trained_model_with_new_rules():
 
     # TRAIN data and create a new nlp model
     result_nlp = train_spacy(untrained_nlp, TRAIN_DATA, 50)
-    result_nlp.to_disk("models/ner_brainzilla_puzzles_model_50_lg")
+    result_nlp.to_disk("models/ner_brainzilla_puzzles_model_50_lg_final")
 
 
 def test_model(input_puzzle: str, model: str):
@@ -205,6 +205,9 @@ def test_model(input_puzzle: str, model: str):
     """
     trained_nlp = spacy.load(model)
     doc = trained_nlp(input_puzzle)
+    entities = [(x.text, x.label_) for x in doc.ents]
+    print(entities)
+
     # This will display nicely NER at this address  http://0.0.0.0:5001
     pretty_print_ner(doc)
 
@@ -232,8 +235,32 @@ def main():
     # update_trained_model_with_new_rules()
 
     # Test the model
-    test = get_puzzle(41)
-    test_model(test, "models/ner_brainzilla_puzzles_model_50_lg")
+    # test = get_puzzle(41)
+    # example = "•  Jackie is next to the person who eats on the lounge.\n •  Arnotts brand cookies are kept in a round jar.\n •  The person beside Cameron eats cookies at a table.\n •  The person who eats Oreos eats in the closet\n •  Julieanne likes Paradise brand cookies\n •  The person who drinks banana milk is in the middle and owns a tall jar\n •  The first person likes vanilla milk\n •  Holly is the person on the far right\n •  The person who eats in the bedroom drinks strawberry milk\n •  The person who owns the tall jar is next to the person who owns square jar\n •  Cameron drinks caramel milk\n •  The person who likes the Dick Smith brand is next to the person who likes the Coles brand\n •  The person who likes the No Frills brand is next to the person who owns a round jar\n •  The person who stole the 100s and 1000s cookies is next to the person who owns the brass jar\n •  The second person from the right eats No Frills brand and is next to the person who owns a round jar\n •  The first person on the left stole the choc chip cookies\n •  The person who eats Dick Smith brand is next to the person who eats Paradise brand\n •  The second from the left has a brass jar\n •  Julieanne is to the right of the person who drinks strawberry milk\n •  The person who drinks chocolate milk does it at the table\n •  The Paradise brand cookies are eaten in the kitchen\n •  The person who eats Tiny Teddies doesn't keep them in a round jar\n •  The Coles brand cookies are kept in a mini sized jar\n\nA Ginger Cookie was also stolen."
+    example = """1. Daniella Black and her husband work as Shop-Assistants.
+2. The book "The Seadog" was brought by a couple who drive a Fiat and love the color red.
+3. Owen and his wife Victoria like the color brown.
+4. Stan Horricks and his wife Hannah like the color white.
+5. Jenny Smith and her husband work as Warehouse Managers and they drive a Wartburg.
+6. Monica and her husband Alexander borrowed the book "Grandfather Joseph".
+7. Mathew and his wife like the color pink and brought the book "Mulatka Gabriela".
+8. Irene and her husband Oto work as Accountants.
+9. The book "We Were Five" was borrowed by a couple driving a Trabant.
+10. The Cermaks are both Ticket-Collectors who brought the book "Shed Stoat".
+11. Mr and Mrs Kuril are both Doctors who borrowed the book "Slovacko Judge".
+12. Paul and his wife like the color green.
+13. Veronica Dvorak and her husband like the color blue.
+14. Rick and his wife brought the book "Slovacko Judge" and they drive a Ziguli.
+15. One couple brought the book "Dame Commissar" and borrowed the book "Mulatka Gabriela".
+16. The couple who drive a Dacia, love the color violet.
+17. The couple who work as Teachers borrowed the book "Dame Commissar".
+18. The couple who work as Agriculturalists drive a Moskvic.
+19. Pamela and her husband drive a Renault and brought the book "Grandfather Joseph".
+20. Pamela and her husband borrowed the book that Mr and Mrs Zajac brought.
+21. Robert and his wife like the color yellow and borrowed the book "The Modern Comedy".
+22. Mr and Mrs Swain work as Shoppers.
+23. "The Modern Comedy" was brought by a couple driving a Skoda."""
+    test_model(example, "models/ner_brainzilla_puzzles_model_50_lg_final")
     # print(test)
 
     # Generate a starting file for the testing data to be corrected manually
