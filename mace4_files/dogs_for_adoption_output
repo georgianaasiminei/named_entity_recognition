@@ -1,0 +1,10 @@
+set(arithmetic).
+assign(domain_size, 5).
+assign(max_models, -1).
+list(distinct).
+['Rex', 'Kevin', 'Ryan', 'Spike', 'Bob', 'Apollo', 'Hank', 'Luke'].
+['Rottweiler', 'Dachshund', 'Poodle', 'Beagle', 'Chihuahua'].
+['Nurse', 'Waiter', 'Painter', 'Actor', 'Designer'].
+['Hiking', 'Jogging', 'Reading', 'Drawing', 'Cooking'].
+['Yellow', 'Black', 'Blue', 'Red', 'White'].
+end_of_list.

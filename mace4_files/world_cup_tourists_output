@@ -1,0 +1,11 @@
+set(arithmetic).
+assign(domain_size, 5).
+assign(max_models, -1).
+list(distinct).
+['French', 'Mexican', 'American', 'Portuguese', 'Japanese', 'Argentinian'].
+['Sister', 'Wife', 'Son', 'Modrić', 'Girlfriend', 'Salah'].
+['Juice', 'Soft drink', 'Vodka', 'Water', 'Beer'].
+['Green', 'Red', 'Black', 'White'].
+['40-year-old', '46-year-old', '33-year-old'].
+['Neymar', 'Messi'].
+end_of_list.

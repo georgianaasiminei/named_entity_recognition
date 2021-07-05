@@ -1,0 +1,11 @@
+set(arithmetic).
+assign(domain_size, 5).
+assign(max_models, -1).
+list(distinct).
+['22-year-old', '2 days', '3 days', '21-year-old', '6 days', '23 years old', '5 days', '4 days', '20-year-old'].
+['White', 'Red', 'Orange', 'Black', 'Blue'].
+['20%', '30%', '40%', '50%'].
+['Colin', 'Edgar', 'Peter', 'John'].
+['Laptop', 'Cell', 'Drone', 'TV'].
+['Orange'].
+end_of_list.

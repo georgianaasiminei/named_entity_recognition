@@ -2,13 +2,11 @@ set(arithmetic).
 assign(domain_size, 5).
 assign(max_models, -1).
 list(distinct).
-['Pickup', 'SUV', 'Crossover', 'Smiths', 'Clarks', 'Davis', 'Puzzle'].
-['White', 'Red', 'Turtle', 'Black', 'Green', 'Blue'].
-['4', 'one', '2', '3', '5'].
-['Origami', 'Davis', 'Roberts', 'Martinez'].
-['Cat', 'Dog', 'Hamster'].
-['Drawing', 'Board'].
-['second', 'third'].
-['Sedan'].
-['Coloring'].
+['White', 'Red', 'Black', 'Green', 'Blue'].
+['Pickup', 'Sedan', 'SUV', 'Crossover', 'Puzzle'].
+['Davis', 'Roberts', 'Martinez', 'Smiths', 'Clarks'].
+['4', '2', '3', '5'].
+['Cat', 'Turtle', 'Dog', 'Hamster'].
+['Drawing', 'Coloring', 'Origami'].
+['Board game'].
 end_of_list.

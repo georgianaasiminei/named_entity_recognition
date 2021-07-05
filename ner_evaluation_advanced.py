@@ -167,28 +167,30 @@ lines = ['ent_type', 'exact', 'partial', 'strict']
 columns = ['actual', 'correct', 'incorrect', 'missed', 'partial', 'possible', 'precision', 'recall', 'spurious']
 from csv import writer
 
-# with open('marci_results.csv', 'w', newline="") as f:
-#     csv = writer(f, delimiter=',')
-#     csv.writerow(["Measure"] + [x.title() for x in lines])
-#     for column in columns:
-#         res = [column.title()]
-#         for line in lines:
-#             res.append(results[line][column])
-#         csv.writerow(res)
-#     csv.writerow([])
-#
-#     for entity in evaluation_agg_entities_type:
-#         csv.writerow([entity])
-#         csv.writerow([])
-#         csv.writerow(["Measure"] + [x.title() for x in lines])
-#         for column in columns:
-#             res = [column.title()]
-#             for line in lines:
-#                 res.append(evaluation_agg_entities_type[entity][line][column])
-#             csv.writerow(res)
-#         csv.writerow([])
+
+
+with open('evaluation_metrics_advanced.csv', 'w', newline="") as f:
+    csv = writer(f, delimiter=',')
+    csv.writerow(["Measure"] + [x.title() for x in lines])
+    for column in columns:
+        res = [column.title()]
+        for line in lines:
+            res.append(results[line][column])
+        csv.writerow(res)
+    csv.writerow([])
+
+    for entity in evaluation_agg_entities_type:
+        csv.writerow([entity])
+        csv.writerow([])
+        csv.writerow(["Measure"] + [x.title() for x in lines])
+        for column in columns:
+            res = [column.title()]
+            for line in lines:
+                res.append(evaluation_agg_entities_type[entity][line][column])
+            csv.writerow(res)
+        csv.writerow([])
 
 
 
 #pprint(results)
-#pprint(evaluation_agg_entities_type)
+pprint(evaluation_agg_entities_type)

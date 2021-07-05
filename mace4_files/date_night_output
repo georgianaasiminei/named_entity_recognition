@@ -1,0 +1,10 @@
+set(arithmetic).
+assign(domain_size, 5).
+assign(max_models, -1).
+list(distinct).
+['Laura', 'Daniel', 'Donna', 'Ann', 'Barry', 'Andrew', 'Rose', 'Scott', 'Kristen'].
+['French', 'Italian', 'Spanish', 'Chilean', 'Argentine'].
+['3 years', '6 years', '2 years', '5 years', '4 years'].
+['Red', 'White', 'Pink', 'Purple'].
+['Rigatoni', 'Spaghetti', 'Fettuccine', 'Lasagne'].
+end_of_list.

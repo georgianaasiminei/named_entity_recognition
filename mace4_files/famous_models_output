@@ -1,0 +1,14 @@
+set(arithmetic).
+assign(domain_size, 5).
+assign(max_models, -1).
+list(distinct).
+['125 lbs', '110 lbs', '130 lbs', '115 lbs', '120 lbs'].
+['Black', 'Purple', 'White', 'Blue'].
+['22-year-old', '23-year-old', '24-year-old', '25-year-old'].
+['American', 'Dutch', 'Brazilian', 'Ukrainian'].
+['Reading', 'Gardening', 'Singing', 'Cooking'].
+['four', '5\'9"', '5\'8"', '5\'7"'].
+['South'].
+['New York'].
+['Kiev'].
+end_of_list.

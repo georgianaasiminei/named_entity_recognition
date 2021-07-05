@@ -1,0 +1,10 @@
+set(arithmetic).
+assign(domain_size, 5).
+assign(max_models, -1).
+list(distinct).
+['June', '51-year-old', 'monthly', 'March', 'August', '46-year-old', '40 years old', 'December', '51 years old'].
+['Julian', 'Adam', 'Michael', 'Thomas', 'Nathan'].
+['Red', 'Black', 'Yellow', 'Blue'].
+['3,000', '2,000', '4,000', '5,000'].
+['HR', 'Sales', 'R&D', 'Marketing'].
+end_of_list.

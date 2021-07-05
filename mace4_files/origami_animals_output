@@ -1,0 +1,13 @@
+set(arithmetic).
+assign(domain_size, 5).
+assign(max_models, -1).
+list(distinct).
+['Cheese', 'Chicken', 'Tuna', 'Pepperoni', 'Bacon'].
+['Frog', 'Frank', 'Phillip', 'Jeffrey', 'Albert'].
+['White', 'Blue', 'Green', 'Red'].
+['9-year-old', '11-year-old', '8-year-old', '10-year-old'].
+['Cat', 'Dog', 'Bird'].
+['Pineapple', 'Strawberry', 'Lemon'].
+['Elephant'].
+['Apple'].
+end_of_list.

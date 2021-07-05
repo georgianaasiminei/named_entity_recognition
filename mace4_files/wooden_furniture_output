@@ -1,0 +1,12 @@
+set(arithmetic).
+assign(domain_size, 5).
+assign(max_models, -1).
+list(distinct).
+['25 days', '20 days', '10 days', '45 years old', '5 days', '40-year-old', '40 years old', '45-year-old', '50-year-old'].
+['Lori', 'Dana', 'Barbara', 'Patricia', 'Dresser'].
+['Yellow', 'Green', 'Red', 'Orange'].
+['900', '1100', '800'].
+['Wardrobe', 'Cupboard'].
+['Table'].
+['Wardrobe'].
+end_of_list.

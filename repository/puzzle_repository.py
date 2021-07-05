@@ -37,6 +37,14 @@ def get_testing_puzzles(ids: List[int]) -> List[str]:
     return clues
 
 
+def get_testing_puzzles_with_title(ids: List[int]) -> List[str]:
+    """Returns the clues of the puzzles having the id in the given ids list"""
+    all_puzzles = Puzzle.select()
+    puzzles_dict = {puzzle.id: (puzzle.title, puzzle.clues) for puzzle in all_puzzles}
+    puzzles = [(title, clue) for id_, (title, clue) in puzzles_dict.items() if id_ in ids]
+    return puzzles
+
+
 def get_training_puzzles(excluded_ids: List[int]) -> List[str]:
     """Returns the clues of the puzzles having the id in the given ids list"""
     all_puzzles = Puzzle.select()

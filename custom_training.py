@@ -235,7 +235,7 @@ def main():
     # update_trained_model_with_new_rules()
 
     # Test the model
-    # test = get_puzzle(41)
+    test = get_puzzle(58)
     # example = "•  Jackie is next to the person who eats on the lounge.\n •  Arnotts brand cookies are kept in a round jar.\n •  The person beside Cameron eats cookies at a table.\n •  The person who eats Oreos eats in the closet\n •  Julieanne likes Paradise brand cookies\n •  The person who drinks banana milk is in the middle and owns a tall jar\n •  The first person likes vanilla milk\n •  Holly is the person on the far right\n •  The person who eats in the bedroom drinks strawberry milk\n •  The person who owns the tall jar is next to the person who owns square jar\n •  Cameron drinks caramel milk\n •  The person who likes the Dick Smith brand is next to the person who likes the Coles brand\n •  The person who likes the No Frills brand is next to the person who owns a round jar\n •  The person who stole the 100s and 1000s cookies is next to the person who owns the brass jar\n •  The second person from the right eats No Frills brand and is next to the person who owns a round jar\n •  The first person on the left stole the choc chip cookies\n •  The person who eats Dick Smith brand is next to the person who eats Paradise brand\n •  The second from the left has a brass jar\n •  Julieanne is to the right of the person who drinks strawberry milk\n •  The person who drinks chocolate milk does it at the table\n •  The Paradise brand cookies are eaten in the kitchen\n •  The person who eats Tiny Teddies doesn't keep them in a round jar\n •  The Coles brand cookies are kept in a mini sized jar\n\nA Ginger Cookie was also stolen."
     example = """1. Daniella Black and her husband work as Shop-Assistants.
 2. The book "The Seadog" was brought by a couple who drive a Fiat and love the color red.
@@ -260,7 +260,7 @@ def main():
 21. Robert and his wife like the color yellow and borrowed the book "The Modern Comedy".
 22. Mr and Mrs Swain work as Shoppers.
 23. "The Modern Comedy" was brought by a couple driving a Skoda."""
-    test_model(example, "models/ner_brainzilla_puzzles_model_50_lg_final")
+    test_model(test, "models/ner_brainzilla_puzzles_model_50_lg_final")
     # print(test)
 
     # Generate a starting file for the testing data to be corrected manually

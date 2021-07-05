@@ -1,0 +1,13 @@
+set(arithmetic).
+assign(domain_size, 5).
+assign(max_models, -1).
+list(distinct).
+['20 days', '32-year-old', '30-year-old', '24-year-old', '25 days', '15 days', 'less than a week', '5 days'].
+['Singer', 'Biologist', 'Judge', 'Nurse', 'Hostess'].
+['Blue', 'White', 'Green', 'Red', 'Yellow'].
+['Ana', 'Machu', 'Glenda', 'Lara', 'Rose'].
+['Peru', 'Sahara', 'Italy'].
+['Picchu'].
+['Aztec'].
+['28'].
+end_of_list.

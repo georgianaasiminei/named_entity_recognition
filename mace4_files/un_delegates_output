@@ -1,0 +1,12 @@
+set(arithmetic).
+assign(domain_size, 5).
+assign(max_models, -1).
+list(distinct).
+['Scuba', 'Jogging', 'Deforestation', 'Climate', 'Change', 'Woodworking', 'Gardening', 'Poverty'].
+['Turtle', 'Fish', 'Cat', 'Dog', 'Snake'].
+['German', 'French', 'American', 'Brazilian', 'Canadian'].
+['Black', 'Green', 'Blue', 'White'].
+['45-year-old', '50-year-old', '55-year-old', '40-year-old'].
+['Immigrants'].
+['Tie'].
+end_of_list.

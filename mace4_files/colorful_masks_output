@@ -1,0 +1,12 @@
+set(arithmetic).
+assign(domain_size, 5).
+assign(max_models, -1).
+list(distinct).
+['Singing', 'Hot chocolate', 'Reading', 'Cooking', 'Woodworking'].
+['Angela', 'Renee', 'Holly', 'Christine'].
+['45 years old', '40-year-old', '35-year-old', '2020'].
+['Dentist', 'Model', 'Plumber', 'Architect'].
+['Green', 'Orange', 'Blue', 'Red'].
+['Coffee', 'Soft drink', 'Tea'].
+['Orange'].
+end_of_list.

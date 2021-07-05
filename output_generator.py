@@ -4,7 +4,8 @@ from typing import List
 
 import spacy
 
-from repository.puzzle_repository import get_puzzles_in_interval, get_puzzle_with_title
+from repository.puzzle_repository import get_puzzles_in_interval, get_puzzle_with_title, get_testing_puzzles, \
+    get_testing_puzzles_with_title
 
 nlp = spacy.load("models/ner_brainzilla_puzzles_model_50_lg_final")
 
@@ -34,7 +35,7 @@ def extract_entities_from_clues(clue_text: str) -> dict:
 
 
 def _write_to_file(data: List[List], output_file: str):
-    with open(output_file, 'w') as f:
+    with open(output_file, 'w', encoding="utf-8") as f:
         f.write("set(arithmetic).\nassign(domain_size, 5).\nassign(max_models, -1).\nlist(distinct).\n")
         f.writelines([f"{row}.\n" for row in data])
         f.write("end_of_list.\n")
@@ -48,6 +49,9 @@ def generate_output_file(clue_title: str, clue_text: str) -> List[List]:
     result = [list(filter(lambda x: x != "one", ent_text.keys()))  # eliminate `one` as NE
               for ent_label, ent_text in entities.items()
               if ent_label != "ORDINAL"]  # eliminate ordinals as NE
+
+    result = [x for x in result if x]  # eliminate empty lists
+
 
 
     # Optional - can be deleted
@@ -73,8 +77,13 @@ def main():
     # for title, clue_text in clues_list:
     #     generate_output_file(title, clue_text)
 
-    puzzle_title, puzzle_clues = get_puzzle_with_title(11)
-    generate_output_file(clue_title=puzzle_title, clue_text=puzzle_clues)
+    # puzzle_title, puzzle_clues = get_puzzle_with_title(11)
+    # generate_output_file(clue_title=puzzle_title, clue_text=puzzle_clues)
+
+    testing_puzzles_ids = [11, 13, 17, 19, 27, 33, 36, 42, 47, 51, 55, 58, 61, 64, 69]
+    puzzles_list = get_testing_puzzles_with_title(testing_puzzles_ids)
+    for puzzle_title, puzzle_clues in puzzles_list:
+        generate_output_file(clue_title=puzzle_title, clue_text=puzzle_clues)
 
     # title, clue_text = clues_list[8]
     # generate_output_file(title, clue_text)

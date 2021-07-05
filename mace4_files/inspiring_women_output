@@ -1,0 +1,10 @@
+set(arithmetic).
+assign(domain_size, 5).
+assign(max_models, -1).
+list(distinct).
+['Jessie', 'Grandmother', 'Sabrina', 'Amy', 'Mother', 'Cousin', 'Aunt', 'Lindy'].
+['10 years old', '11-year-old', '11 years old', '10-year-old', '8-year-old', '9-year-old'].
+['Green', 'Red', 'Orange', 'Blue', 'Yellow'].
+['Nurse', 'Writer', 'Teacher', 'Journalist'].
+['Grapefruit', 'Lemon', 'Pineapple', 'Cranberry'].
+end_of_list.
